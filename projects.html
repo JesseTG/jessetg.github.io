@@ -15,7 +15,13 @@ layout: projects
     {% for project in site.data.projects %}
     <article class="project">
         <header>
-            <h1><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></h1>
+            <h1>
+            {% if project.url %}
+              <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+            {% else %}
+              {{ project.name }}
+            {% endif %}
+            </h1>
             <h2>{{ project.tagline }}</h2>
             <br/>
             <ul class="tech">
@@ -25,12 +31,22 @@ layout: projects
             </ul>
         </header>
 
-        {% if project.image %}
-        <img src="/images/{{ project.image }}" class="preview" /> {% else %}
+        {% if project.image %} {% if project.url %}
+        <a href="{{ project.url }}" target="_blank">
+            <img src="/images/{{ project.image }}" class="preview" />
+        </a>
+        {% else %}
+        <img src="/images/{{ project.image }}" class="preview" /> {% endif %} {% else %} {% if project.url %}
+        <a href="{{ project.url }}" target="_blank">
+            <div class="preview">
+                <span class="no-preview">No image available</span>
+            </div>
+        </a>
+        {% else %}
         <div class="preview">
             <span class="no-preview">No image available</span>
         </div>
-        {% endif %}
+        {% endif %} {% endif %}
         <div class="description">
             {% if project.description %} {% include {{ project.description }} %} {% else %} No description available. {% endif %}
         </div>
