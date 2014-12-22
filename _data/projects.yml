@@ -1,0 +1,26 @@
+- name: Invasodado
+  tagline: Blocks and aliens and UFOs, oh my!
+  description: projects/invasodado.html
+  tech: { Python, Pygame }
+  image: projects/invasodado.png
+  url: http://www.desura.com/games/invasodado
+
+- name: Gravv
+  tagline: Bullets are overrated.  Use gravity instead!
+  description: projects/gravv.html
+  image: projects/gravv.png
+  tech: { Java, libGDX }
+
+- name: Orbital
+  tagline: And yet it moves.
+  #description: projects/x-piano.html
+  #image: projects/x-piano.png
+  tech: { Unity3D }
+  url: /Orbital
+
+- name: X Piano
+  tagline: Now you can make your own piano!
+  #description: projects/x-piano.html
+  #image: projects/x-piano.png
+  tech: { JavaScript, WebAudio, SVG }
+  url: /X-Piano
