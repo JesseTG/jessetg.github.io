@@ -82,10 +82,6 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-::-webkit-scrollbar { 
-    width: 0 !important
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #EC4E3B;
   margin: 0 0 10px;
