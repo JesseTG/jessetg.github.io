@@ -1,13 +1,39 @@
 ---
-title: projects
+title: Projects
 permalink: "/projects/index.html"
 layout: projects
 ---
-<a href="{{ "/resume" | prepend:site.baseurl }}"><i class="fa fa-chevron-left"></i> resume</a> |
-<a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-home"></i> home</a>
+
+<nav>
+    <a href="{{ " /resume " | prepend:site.baseurl }}"><i class="fa fa-chevron-left"></i> resume</a> |
+    <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-home"></i> home</a>
+</nav>
 <br/>
-<div class="text-center">
-  <h3>title</h3>
-    <p class="text-muted">description..................</p>
-</div>
-</div>
+<h1>Projects</h1>
+<h2>Things I've Made</h2>
+<section id="projects">
+    {% for project in site.data.projects %}
+    <article class="project">
+        <header>
+            <h1><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></h1>
+            <h2>{{ project.tagline }}</h2>
+            <br/>
+            <ul class="tech">
+                {% for t in project.tech %}
+                <li>{{ t }}</li>
+                {% endfor %}
+            </ul>
+        </header>
+
+        {% if project.image %}
+        <img src="/images/{{ project.image }}" class="preview" /> {% else %}
+        <div class="preview">
+            <span class="no-preview">No image available</span>
+        </div>
+        {% endif %}
+        <div class="description">
+            {% if project.description %} {% include {{ project.description }} %} {% else %} No description available. {% endif %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
