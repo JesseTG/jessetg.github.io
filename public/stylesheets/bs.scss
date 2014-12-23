@@ -40,6 +40,15 @@ pre {
         font-size: 13px;
     }
 }
+#page-title {
+    h1 {} 
+    h2 {
+        color: #B3D1F0;
+        font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+    }
+}
 ///////////////////////////////////////////////////////////////////////////////
 // Site-specific
 ///////////////////////////////////////////////////////////////////////////////
@@ -54,34 +63,32 @@ pre {
             margin-bottom: 1em;
             h1 {
                 margin: 0;
-                padding-: 0;
+                padding: 0;
                 display: inline-block;
             }
             h2 {
                 display: inline-block;
-                font-size: 18px;
                 color: #A3BFC6;
                 margin: 0 0 0 .5em;
-                font-weight: bold;
+                font: {
+                    weight: bold;
+                    size: 18px;
+                }
             }
         }
-
         ul.tech {
-          padding: 0;
-          margin: 0;
-          li {
-            display: inline;
-
-            &:after {
-              content: ",";
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline;
+                &:after {
+                    content: ",";
+                }
+                &:last-of-type:after {
+                    content: "";
+                }
             }
-
-            &:last-of-type:after {
-              content: "";
-            }
-          }
         }
-
         .description {
             clear: left;
         }
