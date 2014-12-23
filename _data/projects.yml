@@ -1,26 +1,48 @@
 - name: Invasodado
-  tagline: Blocks and aliens and UFOs, oh my!
+  tagline: "Blocks and aliens and UFOs, oh my!"
   description: projects/invasodado.html
   tech: { Python, Pygame }
   image: projects/invasodado.png
   url: http://www.desura.com/games/invasodado
 
 - name: Gravv
-  tagline: Bullets are overrated.  Use gravity instead!
+  tagline: Bullets are overrated.
   description: projects/gravv.html
   image: projects/gravv.png
   tech: { Java, libGDX }
 
 - name: Orbital
-  tagline: And yet it moves.
+  tagline: And yet they move.
   #description: projects/x-piano.html
-  #image: projects/x-piano.png
-  tech: { Unity3D }
+  image: projects/orbital.png
+  tech: { Unity }
   url: /Orbital
 
 - name: X Piano
   tagline: Now you can make your own piano!
-  #description: projects/x-piano.html
-  #image: projects/x-piano.png
-  tech: { JavaScript, WebAudio, SVG }
+  description: projects/x-piano.html
+  image: projects/x-piano.png
+  tech: { JavaScript, Web Audio, SVG }
   url: /X-Piano
+
+- name: Buzzer
+  tagline: This app is used to make a loud noise.
+  description: projects/buzzer.html
+  image: projects/buzzer.png
+  tech: { JavaScript, Web Audio }
+  url: /Buzzer
+
+- name: Pathological
+  tagline: Sculpt your splines.
+  description: projects/pathological.html
+  tech: { Java, libGDX }
+
+- name: Brain Drain
+  tagline: "#@$&!"
+  description: projects/brain-drain.html
+  tech: { C++, Boost }
+
+- name: Linear Algebra Demo
+  description: projects/linear-algebra-demo.html
+  tagline: Down the rabbit hole.
+  tech: { C++, SFML }
