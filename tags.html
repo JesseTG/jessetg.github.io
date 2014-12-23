@@ -1,10 +1,10 @@
 ---
-layout: page
+title: Tags
+layout: default
 permalink: "tags/index.html"
 ---
 
-<ul class="tags">
-  <a class="text-muted">Tag cloud:</a>
+<ul id="tags">
   {% for tag in site.tags %}
   <a href="#{{ tag | first | slugize }}">
       {{ tag | first }}

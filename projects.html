@@ -1,13 +1,10 @@
 ---
 title: Projects
+subtitle: The reason you're here
 permalink: "/projects/index.html"
-layout: projects
+
 ---
 
-{% include title.html %}
-
-<h1>Projects</h1>
-<h2>Things I've Made</h2>
 <section id="projects">
     {% for project in site.data.projects %}
     <article class="project">
@@ -30,10 +27,13 @@ layout: projects
 
         {% if project.image %} {% if project.url %}
         <a href="{{ project.url }}" target="_blank">
-            <img src="/images/{{ project.image }}" class="preview" />
+            <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot"/>
         </a>
         {% else %}
-        <img src="/images/{{ project.image }}" class="preview" /> {% endif %} {% else %} {% if project.url %}
+        <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot"/>
+         {% endif %} 
+         {% else %} 
+         {% if project.url %}
         <a href="{{ project.url }}" target="_blank">
             <div class="preview">
                 <span class="no-preview">No image available</span>
@@ -50,5 +50,3 @@ layout: projects
     </article>
     {% endfor %}
 </section>
-
-{% include footer.html %}

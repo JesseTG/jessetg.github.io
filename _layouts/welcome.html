@@ -17,13 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head> 
   <body>
-    <div class="wrapper">          
-        <section id="content">               
-            {% include title.html %}
-          test
-            {{ content }}      
-        </section>
-    </div>   
+    <div class="wrapper">
+        {% include title.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %}
+    </div> 
     <script src="{{ "/public/javascripts/jquery.min.js" | prepend:site.baseurl }}"></script>
     <script src="{{ "/public/javascripts/bootstrap.min.js" | prepend:site.baseurl }}"></script>
     {% include scripts.html %}
