@@ -41,12 +41,69 @@ pre {
     }
 }
 #page-title {
-    h1 {} 
-    h2 {
+    h1 {} h2 {
         color: #B3D1F0;
         font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: normal;
         font-size: 18px;
+    }
+}
+#resume {
+    .columns {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        .column {
+
+        }
+    }
+
+    display: flex;
+
+    #skills {
+      order: 0;
+    }
+
+    #experience {
+      order: 1;
+
+      .work {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        .job-title {
+          display: inline-block;
+          margin-bottom: 0;
+        }
+
+        .organization {
+          display: inline-block;
+          margin-left: .5em;
+          font-style: italic;
+        }
+
+        .location {
+          display: inline-block;
+        }
+
+        .duration {
+          display: inline-block;
+        }
+      }
+    }
+}
+
+#title .credits.right {
+    display: inline-block;
+    a {
+        font-size: 13pt;
+        padding-left: .25em;
+        &:hover {
+            color: $link-hover-color;
+        }
+        span {
+            vertical-align: top;
+        }
     }
 }
 ///////////////////////////////////////////////////////////////////////////////

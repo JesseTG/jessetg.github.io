@@ -119,12 +119,7 @@ a small {
     margin-top: -0.6em;
     display: block;
 }
-a#git-ic {
-    font-size: 37px;
-    color: #fff;
-}
-a#so-ic {
-    font-size: 32px;
+.credits.right a{
     color: #fff;
 }
 strong {
@@ -198,6 +193,7 @@ hr {
     border: 0;
     border-bottom: 1px dashed #49B1F7;
     color: #b5e853;
+    margin-bottom: .5em;
 }
 dt {
     color: #F0E7D5;
@@ -244,7 +240,6 @@ section .p-title, main .p-title {
     font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     color: #696969;
-    margin-top: -27px;
 }
 #title .credits.left {
     float: left;
