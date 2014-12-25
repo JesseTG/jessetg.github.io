@@ -1,10 +1,24 @@
 <nav class="credits left">
-  <a href="{{ "/blog" | prepend:site.baseurl }}">Blog</a> | 
+  <a href="{{ "/" | prepend:site.baseurl }}">Blog</a> | 
   <a href="{{ "/archive" | prepend:site.baseurl }}">Archive</a> |
-  <a href="{{ "/resume" | prepend:site.baseurl }}">Resume</a> |
+  <a href="{{ "/about" | prepend:site.baseurl }}">About</a> |
   <a href="{{ "/projects" | prepend:site.baseurl }}">Projects</a> 
 </nav>
 
 <span class="credits right">
+    {% if site.git %}
+      <a href="{{site.git}}" target="_blank" rel="external"><span class="fa fa-github"></span></a> 
+    {% endif %}
 
+    {% if site.stackoverflow %}
+      <a href="{{site.stackoverflow}}" target="_blank" rel="external"><span class="fa fa-stack-overflow"></span></a>
+    {% endif %}
+
+    {% if site.twitter %}
+      <a href="{{site.twitter}}" target="_blank" rel="external"><span class="fa fa-twitter"></span></a>
+    {% endif %}
+
+    {% if site.linkedin %}
+      <a href="{{site.linkedin}}" target="_blank" rel="external"><span class="fa fa-linkedin"></span></a>
+    {% endif %}
 </span>
