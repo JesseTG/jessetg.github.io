@@ -11,6 +11,7 @@ paginate_path: /blog/page:num #makes pagination working
 git: "https://github.com/JesseTG"  #Add your github url here.
 stackoverflow: "http://stackoverflow.com/users/1089957/jessetg" #Add your stackoverflow url here.
 twitter: "https://twitter.com/JesseT_G"  #Add your twitter url here.
+linkedin: "https://www.linkedin.com/profile/view?id=204321371"
 
 sass:
     style: :compressed
