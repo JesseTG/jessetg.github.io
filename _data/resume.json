@@ -1,0 +1,75 @@
+{
+    "languages": [
+        "Java",
+        "C/C++/C++11",
+        "Python",
+        "Processing",
+        "C#",
+        "Haxe",
+        "HTML 5",
+        "CSS 3",
+        "JavaScript"
+    ],
+    "libraries": [
+        "libGDX",
+        "Box2D",
+        "SFML",
+        "OpenGL",
+        "Web Audio",
+        "Pygame",
+        "Boost",
+        "Lua"
+    ],
+    "software": [
+        "Unity 3D",
+        "Git",
+        "RUBE",
+        "Tiled",
+        "Audacity",
+        "Math Studio",
+        "Inkscape"
+    ],
+    "experience": [{
+        "organization": "Stony Brook University",
+        "title": "Teaching Assistant for CSE 219",
+        "location": "Stony Brook, NY",
+        "start": "2014-08-01",
+        "end": "2014-12-01",
+        "description": "experience/ta-cse219.html"
+    }, {
+        "organization": "JUICE Pharma Worldwide",
+        "title": "Interactive Production Intern",
+        "location": "New York, NY",
+        "start": "2013-06-01",
+        "end": "2013-08-01",
+        "description": "experience/juice.html"
+    }],
+    "education": [{
+        "degree": "B.S.",
+        "major" : "Computer Science",
+        "school": "Stony Brook University",
+        "location": "Stony Brook, NY",
+        "notes": [
+            "Minor in Digital Arts",
+            "Specialization in Game Programming",
+            "Dean's List for four semesters",
+            "Cumulative GPA of 3.41 as of Fall 2014"
+        ],
+        "start": "2012",
+        "end": "2016 (expected)",
+        "curriculum": [
+            "Object-Oriented Programming",
+            "Algorithms and Data Structures",
+            "Game Design and Programming",
+            "Computer Music",
+            "Technical Communications",
+            "Operating Systems",
+            "Theory of Computation",
+            "Networking",
+            "Discrete Mathematics",
+            "Linear Algebra",
+            "Probability and Statistics",
+            "Univariate Calculus"
+        ]
+    }]
+}
