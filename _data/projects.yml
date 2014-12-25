@@ -13,7 +13,7 @@
 
 - name: Orbital
   tagline: And yet they move.
-  #description: projects/x-piano.html
+  description: projects/orbital.html
   image: projects/orbital.png
   tech: { Unity }
   url: /Orbital
@@ -35,6 +35,7 @@
 - name: Pathological
   tagline: Sculpt your splines.
   description: projects/pathological.html
+  image: projects/pathological.png
   tech: { Java, libGDX }
 
 - name: Brain Drain
