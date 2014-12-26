@@ -56,7 +56,8 @@
             "Cumulative GPA of 3.41 as of Fall 2014"
         ],
         "start": "2012",
-        "end": "2016 (expected)",
+        "end": "2016",
+        "completed" : false,
         "curriculum": [
             "Object-Oriented Programming",
             "Algorithms and Data Structures",
