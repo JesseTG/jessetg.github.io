@@ -49,50 +49,44 @@ pre {
     }
 }
 #resume {
-    .columns {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        .column {
-
-        }
-    }
-
-    display: flex;
-
+    margin-top: 0;
+    padding-top: 0;
     #skills {
-      order: 0;
+        #languages, #libraries, #software {
+            padding-top: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
     }
-
     #experience {
-      order: 1;
-
-      .work {
-        margin-bottom: 0;
-        padding-bottom: 0;
-
-        .job-title {
-          display: inline-block;
-          margin-bottom: 0;
+        order: 1;
+        .work {
+            margin-top: 0;
+            padding-top: 0;
+            .job-title {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+            .organization {
+                display: inline-block;
+                float: right;
+                margin-left: .5em;
+                font-style: italic;
+            }
+            .location {
+                float: left;
+                display: inline-block;
+            }
+            .duration {
+                float: right;
+                display: inline-block;
+            }
+            .accomplishments {
+                clear: both;
+            }
         }
-
-        .organization {
-          display: inline-block;
-          margin-left: .5em;
-          font-style: italic;
-        }
-
-        .location {
-          display: inline-block;
-        }
-
-        .duration {
-          display: inline-block;
-        }
-      }
     }
 }
-
 #title .credits.right {
     display: inline-block;
     a {
