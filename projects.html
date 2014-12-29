@@ -27,10 +27,10 @@ permalink: "/projects/index.html"
 
         {% if project.image %} {% if project.url %}
         <a href="{{ project.url }}" target="_blank">
-            <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot"/>
+            <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240"/>
         </a>
         {% else %}
-        <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot"/>
+        <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240"/>
          {% endif %} 
          {% else %} 
          {% if project.url %}
