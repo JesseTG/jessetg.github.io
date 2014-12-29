@@ -15,66 +15,76 @@ school_date: "%Y"
     <h2>Projects</h2>
     <p>Check out <a href="/projects">my Projects page</a> for the list!</p>
 </div>
-<div class="container-fluid">
-    <section id="resume" class="row">
-        <div id="skills" class="col-md-6">
-            <section id="languages">
-                <h3>Languages</h3>
-                <ul>
-                    {% for language in site.data.resume.languages %}
-                    <li>{{ language }}</li>
-                    {% endfor %}
-                </ul>
-            </section>
-            <section id="libraries">
-                <h3>Libraries</h3>
-                <ul>
-                    {% for library in site.data.resume.libraries %}
-                    <li>{{ library }}</li>
-                    {% endfor %}
-                </ul>
-            </section>
-            <section id="software">
-                <h3>Software</h3>
-                <ul>
-                    {% for software in site.data.resume.software %}
-                    <li>{{ software }}</li>
-                    {% endfor %}
-                </ul>
-            </section>
-        </div>
-        <div id="experience" class="col-md-6">
-            {% for work in site.data.resume.experience %}
-            <section class="work">
-                <h3 class="job-title">{{ work.title }}</h3>
-                <span class="organization">{{ work.organization }}</span>
-                <br/>
-                <span class="location">{{ work.location }}</span>
-                <span class="duration">{{ work.start | date: page.work_date }} - {{ work.end | date: page.work_date }}</span>
-                <div class="accomplishments">
-                    {% include {{ work.description }} %}
-                </div>
-            </section>
+
+
+<section id="skills">
+    <h2 class="about-title">
+Skills</h2>
+<div>
+    <section id="languages">
+        <h3>Languages</h3>
+        <ul>
+            {% for language in site.data.resume.languages %}
+            <li>{{ language }}</li>
             {% endfor %}
-        </div>
-        <section id="education">
-            {% for ed in site.data.resume.education %}
-            <section class="degree">
-                <h3>{{ ed.degree }} in {{ ed.major }}</h3>
-                <h4>{{ ed.school }}, {{ ed.location }}</h4>
-                <span>{{ ed.start }} - {{ ed.end }} {% unless ed.completed %} (Expected) {% endunless %}</span>
-                <ul>
-                    {% for note in ed.notes %}
-                    <li>{{ note }}</li>
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for class in ed.curriculum %}
-                    <li>{{ class }}</li>
-                    {% endfor %}
-                </ul>
-            </section>
+        </ul>
+    </section>
+    <section id="libraries">
+        <h3>Libraries</h3>
+        <ul>
+            {% for library in site.data.resume.libraries %}
+            <li>{{ library }}</li>
             {% endfor %}
+        </ul>
+    </section>
+    <section id="software">
+        <h3>Software</h3>
+        <ul>
+            {% for software in site.data.resume.software %}
+            <li>{{ software }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="about-title">Experience</h2> {% for work in site.data.resume.experience %}
+    <section class="work">
+        <h3 class="job-title">{{ work.title }}</h3>
+        <span class="organization">{{ work.organization }}</span>
+        <br/>
+        <span class="location">{{ work.location }}</span>
+        <span class="duration">{{ work.start | date: page.work_date }} - {{ work.end | date: page.work_date }}</span>
+        <div class="accomplishments">
+            {% include {{ work.description }} %}
+        </div>
+    </section>
+    {% endfor %}
+</section>
+
+<section id="education">
+    <h2 class="about-title">Education</h2> {% for ed in site.data.resume.education %}
+    <section class="degree">
+        <div>
+        <h3 class="title">{{ ed.degree }} in {{ ed.major }}</h3><br/>
+        <span class="school">{{ ed.school }}, {{ ed.location }}</span><br/>
+        <span class="duration">{{ ed.start }} - {{ ed.end }} {% unless ed.completed %} (Expected) {% endunless %}</span>
+
+        <ul class="notes">
+            {% for note in ed.notes %}
+            <li>{{ note }}</li>
+            {% endfor %}
+        </ul>
+        </div>
+        <section class="curriculum">
+        <h4>Curriculum</h4>
+        <ul>
+            {% for class in ed.curriculum %}
+            <li>{{ class }}</li>
+            {% endfor %}
+        </ul>
         </section>
     </section>
-</div>
+    {% endfor %}
+</section>
