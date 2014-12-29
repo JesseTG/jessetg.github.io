@@ -41,50 +41,88 @@ pre {
     }
 }
 #page-title {
-    h1 {} h2 {
+    h2 {
         color: #B3D1F0;
         font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: normal;
         font-size: 18px;
     }
 }
-#resume {
-    margin-top: 0;
-    padding-top: 0;
-    #skills {
+#experience {
+    padding-bottom: 0;
+    .work {
+        margin-top: 0;
+        padding-top: 0;
+        .job-title {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .organization {
+            display: inline-block;
+            float: right;
+            margin-left: .5em;
+            font-style: italic;
+        }
+        .location {
+            float: left;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .duration {
+            float: right;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .accomplishments {
+            clear: both;
+        }
+    }
+}
+#skills {
+    padding-bottom: 0;
+    div {
+        display: flex;
+        justify-content: space-around;
         #languages, #libraries, #software {
             padding-top: 0;
             margin-top: 0;
             padding-bottom: 0;
+            ul {
+                list-style-type: none;
+                text-align: center;
+                padding-left: 0;
+            }
+            h3 {
+                text-align: center;
+            }
         }
     }
-    #experience {
-        order: 1;
-        .work {
-            margin-top: 0;
-            padding-top: 0;
-            .job-title {
-                display: inline-block;
-                margin-bottom: 0;
-            }
-            .organization {
-                display: inline-block;
-                float: right;
-                margin-left: .5em;
-                font-style: italic;
-            }
-            .location {
-                float: left;
-                display: inline-block;
-            }
-            .duration {
-                float: right;
-                display: inline-block;
-            }
-            .accomplishments {
-                clear: both;
-            }
-        }
+}
+#education {
+  padding-bottom: 0;
+    h3, h4, h5 {
+        display: inline-block;
+    }
+
+    .school {
+      font-weight: bold;
+    }
+
+    .degree {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .curriculum {
+      margin-top: 0;
+      padding-top: 0;
+
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+      }
     }
 }
 #title .credits.right {
@@ -103,6 +141,32 @@ pre {
 ///////////////////////////////////////////////////////////////////////////////
 // Site-specific
 ///////////////////////////////////////////////////////////////////////////////
+.about-title {
+    width: 100%;
+    border-bottom: {
+        color: #49B1F7;
+        width: 2px;
+        style: solid;
+    }
+}
+section.collapse, section.collapse.in, section.collapsing {
+    margin-top: 0;
+    padding-top: 0;
+    background: #36434D;
+    section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    section:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    border-bottom: {
+        color: #49B1F7;
+        width: 2px;
+        style: solid;
+    }
+}
 #projects {
     .project {
         display: inline-block;
