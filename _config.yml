@@ -16,6 +16,9 @@ linkedin: "https://www.linkedin.com/profile/view?id=204321371"
 sass:
     style: :compressed
 
+timezone: America/New_York
+future: false
+
 gems:
   - jekyll-sitemap
 
