@@ -1,5 +1,4 @@
 // Add your own custom SCSS here.
-@import "pygments-tomorrow";
 
 .post-content img,
 .post-excerpt-home img,
@@ -11,4 +10,188 @@
 .post-nav table {
   @extend .table;
   @extend .table-bordered;
+}
+
+#experience {
+    padding-bottom: 0;
+    .work {
+        margin-top: 0;
+        padding-top: 0;
+        .job-title {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .organization {
+            display: inline-block;
+            float: right;
+            margin-left: .5em;
+            font-style: italic;
+        }
+        .location {
+            float: left;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .duration {
+            float: right;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .accomplishments {
+            clear: both;
+        }
+    }
+}
+#skills {
+    padding-bottom: 0;
+    div {
+        display: flex;
+        justify-content: space-around;
+        #languages, #libraries, #software {
+            padding-top: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+            ul {
+                list-style-type: none;
+                text-align: center;
+                padding-left: 0;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+#education {
+  padding-bottom: 0;
+    h3, h4, h5 {
+        display: inline-block;
+    }
+
+    .school {
+      font-weight: bold;
+    }
+
+    .degree {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .curriculum {
+      margin-top: 0;
+      padding-top: 0;
+
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+      }
+    }
+}
+#title .credits.right {
+    display: inline-block;
+    a {
+        font-size: 13pt;
+        padding-left: .25em;
+        &:hover {
+            color: $link-hover-color;
+        }
+        span {
+            vertical-align: top;
+        }
+    }
+}
+
+.about-title {
+    width: 100%;
+    border-bottom: {
+        color: #49B1F7;
+        width: 2px;
+        style: solid;
+    }
+}
+section.collapse, section.collapse.in, section.collapsing {
+    margin-top: 0;
+    padding-top: 0;
+    background: #36434D;
+    section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    section:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    border-bottom: {
+        color: #49B1F7;
+        width: 2px;
+        style: solid;
+    }
+}
+#projects {
+    .project {
+        display: inline-block;
+        width: 100%;
+        padding: 1em;
+        header {
+            display: inline-block;
+            float: left;
+            margin-bottom: 1em;
+            h1 {
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+            }
+            h2 {
+                display: inline-block;
+                color: #A3BFC6;
+                margin: 0 0 0 .5em;
+                font: {
+                    weight: bold;
+                    size: 18px;
+                }
+            }
+        }
+        ul.tech {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline;
+                &:after {
+                    content: ",";
+                }
+                &:last-of-type:after {
+                    content: "";
+                }
+            }
+        }
+        .description {
+            clear: left;
+        }
+        .preview {
+            float: right;
+            margin-left: 1em;
+        }
+        div.preview {
+            width: 320px;
+            height: 240px;
+            background: #3F4E59;
+            line-height: 240px;
+            text-align: center;
+            font-size: 2em;
+            .no-preview {
+                text-shadow: #2D3840 0px 2px;
+                display: inline-block;
+                vertical-align: middle;
+                line-height: normal;
+            }
+        }
+        &:nth-child(even) {
+            background: #2D3840;
+        }
+        &:nth-child(odd) {
+            background: #36434D;
+        }
+    }
 }
