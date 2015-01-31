@@ -8,6 +8,8 @@ Occasionally I participate on the [/r/WritingPrompts](http://www.reddit.com/r/Wr
 
 [This is the original prompt.](http://www.reddit.com/r/WritingPrompts/comments/2o6qjn/wp_it_turns_out_you_can_use_magic_by_playing/)  My response follows.
 
+- - -
+
 "His heart's not beating, somebody get help!" A young woman kneeled over an elderly man. He had suddenly collapsed in the middle of the diner; tragic, as he seemed perfectly fine when he first got here.
 
 "Christ, not again. Hold on, I got this." He fumbled around his person for something. Which pocket was it in? His coat? His jacket? Pants? Man, if it weren't so could out today he wouldn't have had to layer up and this wouldn't be an issue.

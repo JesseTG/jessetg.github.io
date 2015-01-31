@@ -8,6 +8,8 @@ Occasionally I participate on the [/r/WritingPrompts](http://www.reddit.com/r/Wr
 
 [This is the original prompt.](http://www.reddit.com/r/WritingPrompts/comments/2sbwoh/wp_pick_a_videogame_with_almost_no_story_behind/)  My response follows.
 
+- - -
+
 I've been into video games for as long as I can remember.  Hell, when I finished high school I had more game consoles than dates.  But I've always had a soft spot for Nintendo in particular.  Back in the late 90's, Nintendo came out with this line of collectible figurines.  Naturally, I had to have them all.  I was just shy of fourteen years old when my mom got me my first pair--Mario and Link.  They were my reward for doing so well in school that year.
 
 But the Toys R' Us in my area had ten more of these little toys in stock.  I whined and moaned to my parents for the complete set, but they weren't about to cave in over a few bits of plastic; I was encouraged to get out of my comfort zone and come up with the money myself.  There were lawns to be mowed, dogs to be walked, newspapers to deliver--good thing nobody in my neighborhood had Internet service yet!  My allowance would only take me so far, so I took every opportunity I could.
