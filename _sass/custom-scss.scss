@@ -1,17 +1,17 @@
-// Add your own custom SCSS here.
-
-.post-content img,
-.post-excerpt-home img,
-.post-nav img {
-  @extend .img-rounded;
+.post-content img, .post-excerpt-home img, .post-nav img {
+    @extend .img-rounded;
 }
-.post-content table,
-.post-excerpt-home table,
-.post-nav table {
-  @extend .table;
-  @extend .table-bordered;
+.post-content table, .post-excerpt-home table, .post-nav table {
+    @extend .table;
+    @extend .table-bordered;
 }
-
+main {
+  hr {
+    width: 50%;
+    border-bottom: 1px solid #36434D;
+    margin-top: .5em;
+  }
+}
 #experience {
     padding-bottom: 0;
     .work {
@@ -63,30 +63,26 @@
     }
 }
 #education {
-  padding-bottom: 0;
+    padding-bottom: 0;
     h3, h4, h5 {
         display: inline-block;
     }
-
     .school {
-      font-weight: bold;
+        font-weight: bold;
     }
-
     .degree {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 0;
-      padding-top: 0;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        padding-top: 0;
     }
-
     .curriculum {
-      margin-top: 0;
-      padding-top: 0;
-
-      ul {
-        padding-left: 0;
-        list-style-type: none;
-      }
+        margin-top: 0;
+        padding-top: 0;
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
     }
 }
 #title .credits.right {
@@ -102,7 +98,6 @@
         }
     }
 }
-
 .about-title {
     width: 100%;
     border-bottom: {
