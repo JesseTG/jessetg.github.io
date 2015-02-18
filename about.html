@@ -55,7 +55,7 @@ Skills</h2>
         <span class="organization">{{ work.organization }}</span>
         <br/>
         <span class="location">{{ work.location }}</span>
-        <span class="duration">{{ work.start | date: page.work_date }} - {{ work.end | date: page.work_date }}</span>
+        <span class="duration">{{ work.start | date: page.work_date }} - {% if work.end %}{{ work.end | date: page.work_date }}{% else %}Present{% endif %}</span>
         <div class="accomplishments">
             {% include {{ work.description }} %}
         </div>
