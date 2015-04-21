@@ -59,7 +59,7 @@
     ],
     "languages": [
         "Java",
-        "C/C++/C++11",
+        "C++",
         "Python",
         "Processing",
         "C#",
@@ -71,6 +71,7 @@
     "libraries": [
         "libGDX",
         "Box2D",
+        "Qt",
         "SFML",
         "OpenGL",
         "Web Audio",
@@ -85,7 +86,6 @@
         "RUBE",
         "Tiled",
         "Audacity",
-        "Math Studio",
         "Inkscape"
     ]
 }
