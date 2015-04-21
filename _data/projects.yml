@@ -10,6 +10,7 @@
   description: projects/balls.html
   tech: { C++, Qt, OpenGL }
   image: projects/balls.png
+  url: https://github.com/JesseTG/BALLS
 
 - name: Gravv
   tagline: Bullets are overrated.
