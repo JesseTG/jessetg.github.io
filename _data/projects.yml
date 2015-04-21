@@ -5,6 +5,12 @@
   image: projects/invasodado.png
   url: http://www.desura.com/games/invasodado
 
+- name: B.A.L.L.S.
+  tagline: The Badass Looker for Ludicrous Shaders
+  description: projects/balls.html
+  tech: { C++, Qt, OpenGL }
+  image: projects/balls.png
+
 - name: Gravv
   tagline: Bullets are overrated.
   description: projects/gravv.html
