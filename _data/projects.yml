@@ -1,56 +1,75 @@
 - name: Invasodado
-  tagline: "Blocks and aliens and UFOs, oh my!"
+  headline: "Blocks and aliens and UFOs, oh my!"
   description: projects/invasodado.html
   tech: { Python, Pygame }
   image: projects/invasodado.png
   url: http://www.desura.com/games/invasodado
+  applicationCategory: Game
+  operatingSystem: Any
+  type: VideoGame
+  genre: Arcade
 
 - name: B.A.L.L.S.
-  tagline: The Badass Looker for Ludicrous Shaders
+  headline: The Badass Looker for Ludicrous Shaders
   description: projects/balls.html
   tech: { C++, Qt, OpenGL }
   image: projects/balls.png
   url: https://github.com/JesseTG/BALLS
+  applicationCategory: Development
+  applicationSubCategory: Graphics
 
 - name: Gravv
-  tagline: Bullets are overrated.
+  headline: Bullets are overrated.
+  type: VideoGame
   description: projects/gravv.html
   image: projects/gravv.png
   tech: { Java, libGDX }
+  applicationCategory: Game
+  genre: Arcade
 
 - name: Orbital
-  tagline: And yet they move.
+  headline: And yet they move.
+  type: VideoGame
   description: projects/orbital.html
   image: projects/orbital.png
   tech: { Unity }
   url: /Orbital
+  applicationCategory: Game
+  genre: Casual
 
 - name: X Piano
-  tagline: Now you can make your own piano!
+  headline: Now you can make your own piano!
+  type: WebApplication
   description: projects/x-piano.html
   image: projects/x-piano.png
   tech: { JavaScript, Web Audio, SVG }
+  applicationCategory: Audio
   url: /X-Piano
 
 - name: Buzzer
-  tagline: This app is used to make a loud noise.
+  headline: This app is used to make a loud noise.
+  type: WebApplication
   description: projects/buzzer.html
   image: projects/buzzer.jpg
   tech: { JavaScript, Web Audio }
+  applicationCategory: Audio
   url: /Buzzer
 
 - name: Pathological
-  tagline: Sculpt your splines.
+  headline: Sculpt your splines.
   description: projects/pathological.html
   image: projects/pathological.jpg
   tech: { Java, libGDX }
+  applicationCategory: Graphics
 
 - name: Brain Drain
-  tagline: "#@$&!"
+  headline: "#@$&!"
   description: projects/brain-drain.html
   tech: { C++, Boost }
+  applicationCategory: Development
 
 - name: Linear Algebra Demo
   description: projects/linear-algebra-demo.html
-  tagline: Down the rabbit hole.
+  headline: Down the rabbit hole.
   tech: { C++, SFML }
+  applicationCategory: Graphics

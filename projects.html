@@ -6,17 +6,29 @@ type: CollectionPage
 ---
 
 <section id="projects">
+
     {% for project in site.data.projects %}
-    <article class="project">
+    {% capture description %}
+      {% if project.description %} {% include {{ project.description }} %} {% else %} No description available. {% endif %}
+    {% endcapture %}
+    <article class="project" itemscope itemtype="http://schema.org/{% if project.type %}{{ project.type }}{% else %}SoftwareApplication{% endif %}">
+        {% if project.genre %}<meta itemprop="genre" content="{{ project.genre }}" />{% endif %}
+        {% if project.softwareVersion %}<meta itemprop="softwareVersion" content="{{ project.softwareVersion }}" />{% endif %}
+        {% if project.applicationCategory %}<meta itemprop="applicationCategory" content="{{ project.applicationCategory }}" />{% endif %}
+        {% if project.applicationSubCategory %}<meta itemprop="applicationSubCategory" content="{{ project.applicationSubCategory }}" />{% endif %}
+        {% if project.isFamilyFriendly %}<meta itemprop="isFamilyFriendly" content="{{ project.isFamilyFriendly }}" />{% endif %}
+        {% if project.license %}<meta itemprop="license" content="{{ project.license }}" />{% endif %}
+        {% if project.operatingSystem %}<meta itemprop="operatingSystem" content="{{ project.operatingSystem }}" />{% endif %}
+
         <header>
-            <h1>
+            <h1 itemprop="name">
             {% if project.url %}
-              <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+              <a itemprop="url sameAs" href="{{ project.url }}" target="_blank">{{ project.name }}</a>
             {% else %}
-              {{ project.name }}
+              <span>{{ project.name }}</span>
             {% endif %}
             </h1>
-            <h2>{{ project.tagline }}</h2>
+            <h2 itemprop="headline">{{ project.headline }}</h2>
             <br/>
             <ul class="tech">
                 {% for t in project.tech %}
@@ -27,10 +39,10 @@ type: CollectionPage
 
         {% if project.image %} {% if project.url %}
         <a href="{{ project.url }}" target="_blank">
-            <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240"/>
+            <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240" itemprop="screenshot image"/>
         </a>
         {% else %}
-        <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240"/>
+        <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240" itemprop="screenshot image"/>
          {% endif %} 
          {% else %} 
          {% if project.url %}
@@ -44,8 +56,9 @@ type: CollectionPage
             <span class="no-preview">No image available</span>
         </div>
         {% endif %} {% endif %}
-        <div class="description">
-            {% if project.description %} {% include {{ project.description }} %} {% else %} No description available. {% endif %}
+
+        <div itemprop="description" class="description">
+            {{ description }}
         </div>
     </article>
     {% endfor %}
