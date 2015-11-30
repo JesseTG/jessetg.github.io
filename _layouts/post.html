@@ -3,9 +3,11 @@ layout: default
 type: ItemPage
 ---
 
-<article>
+<article itemscope itemtype="http://schema.org/BlogPosting">
     {% include post-header.html %}
-    {{ content }}
+    <div itemprop="articleBody">
+        {{ content }}
+    </div>
 </article>
 
 <div class="share-btns">
