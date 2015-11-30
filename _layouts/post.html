@@ -4,6 +4,12 @@ type: ItemPage
 ---
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+    <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
+    <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}"/>
+    <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
+    <meta itemprop="name" content="{{ page.title }}" />
+
     {% include post-header.html %}
     <div itemprop="articleBody">
         {{ content }}
