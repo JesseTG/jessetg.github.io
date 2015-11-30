@@ -1,0 +1,55 @@
+- name: Advancements in Three-Dimensional Imagery
+  type: video
+  description: art/3d-imagery.html
+  tools: { Blender, LMMS, MakeHuman, Final Cut Pro }
+  preview: art/thumb/3d-imagery.html
+  work: https://youtu.be/pFiuB8qqUAs
+  date: 2015-05-01
+
+- name: A Video Recorded Hand
+  type: video
+  description: art/a-video-recorded-hand.html
+  tools: { Final Cut Pro }
+  preview: art/thumb/a-video-recorded-hand.jpg
+  work: https://youtu.be/cyTufCSjywM
+  date: 2015-03-01
+
+- name: Your Vision Here
+  type: image
+  description: art/your-vision-here.html
+  tools: { Blender, GIMP, MakeHuman }
+  preview: art/thumb/your-vision-here.jpg
+  work: art/full/your-vision-here.jpg
+  date: 2015-03-01
+
+- name: I'm Sure of It
+  type: image
+  description: art/im-sure-of-it.html
+  tools: { GIMP, Scribus }
+  preview: art/thumb/im-sure-of-it.jpg
+  work: art/full/im-sure-of-it.jpg
+  date: 2015-04-01
+
+- name: Blocks
+  type: image
+  description: art/blocks.html
+  tools: { GIMP }
+  preview: art/thumb/blocks.jpg
+  work: art/full/blocks.jpg
+  date: 2015-02-01
+
+- name: B
+  type: image
+  description: art/b.html
+  tools: { Photoshop }
+  preview: art/thumb/b.png
+  work: art/full/b.png
+  date: 2011-10-01
+
+- name: The Sounds of Absurdity
+  type: images
+  description: art/absurdity.html
+  tools: { Photoshop }
+  preview: art/thumb/absurdity.jpg
+  work: { art/full/absurdity-front.jpg, art/full/absurdity-back.jpg }
+  date: 2012-01-01
