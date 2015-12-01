@@ -4,49 +4,51 @@ type: ItemPage
 ---
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
-    <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
-    <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}"/>
-    <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
-    <meta itemprop="name" content="{{ page.title }}" />
+  <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+  <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
+  <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}"/>
+  <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
+  <meta itemprop="name" content="{{ page.title }}" />
 
-    {% include post-header.html %}
-    <div itemprop="articleBody">
-        {{ content }}
-    </div>
+  {% include post-header.html %}
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
 </article>
 
 <div class="share-btns">
-    {% include share-btns.html %}
+  {% include share-btns.html %}
 </div>
 
 <section class="comments">
-    {% include disqus.html%}
+  {% include disqus.html%}
 </section>
 
 <div class="post-footer">
-    {% include post-footer.html %}
+  {% include post-footer.html %}
 </div>
-<hr/>
-{% if site.data.theme.show_post_navs %}
-<aside>
-{% if page.previous or page.next %}
-<div class="post-navs row">
-    {% if page.previous %}
-    <div class="col-md-6 post-nav">
 
-        <h3 class="section-header">
+<hr/>
+
+{% if site.data.theme.show_post_navs %}
+  <aside>
+    {% if page.previous or page.next %}
+    <div class="post-navs row">
+      {% if page.previous %}
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
             Older
             <span class="text-muted"> &middot; </span>
             <a href="{{ "/archive" | prepend:site.baseurl }}" rel="archives">View Archive ({{ site.posts.size }})</a>
           </h3>
 
-        <h2 class="post-title-link"><a href="{{ page.previous.url | prepend:site.baseurl }}" rel="prev">{{ page.previous.title }}</a></h2> {{ page.previous.excerpt | markdownify }}
-    </div>
-    {% endif %} {% if page.next %}
+          <h2 class="post-title-link"><a href="{{ page.previous.url | prepend:site.baseurl }}" rel="prev">{{ page.previous.title }}</a></h2> {{ page.previous.excerpt | markdownify }}
+        </div>
+      {% endif %}
 
-    <div class="col-md-6 post-nav">
-        <h3 class="section-header">
+      {% if page.next %}
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
             Newer
             {% unless page.previous %}
               <span class="text-muted"> &middot; </span>
@@ -54,10 +56,10 @@ type: ItemPage
             {% endunless %}
           </h3>
 
-        <h2 class="post-title-link"><a href="{{ page.next.url | prepend:site.baseurl }}" rel="next">{{ page.next.title }}</a></h2> {{ page.next.excerpt | markdownify }}
+          <h2 class="post-title-link"><a href="{{ page.next.url | prepend:site.baseurl }}" rel="next">{{ page.next.title }}</a></h2> {{ page.next.excerpt | markdownify }}
+        </div>
+      {% endif %}
     </div>
     {% endif %}
-</div>
-{% endif %}
-</aside>
+  </aside>
 {% endif %}

@@ -2,49 +2,51 @@
 <html itemscope itemtype="http://schema.org/WebSite">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="application-name" content="Jesse Talavera-Greenberg's Personal Website"/>
-    <meta name="author creator" itemprop="author creator publisher" content="Jesse Talavera-Greenberg"/>
-    <meta name="creator" itemprop="creator" content="Jesse Talavera-Greenberg"/>
-    <meta itemprop="description alternativeHeadline" name="description" content="Jesse Talavera-Greenberg's personal website"/>
-    <meta name="generator" content="Jekyll"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="application-name" content="Jesse Talavera-Greenberg's Personal Website"/>
+  <meta name="author creator" itemprop="author creator publisher" content="Jesse Talavera-Greenberg"/>
+  <meta name="creator" itemprop="creator" content="Jesse Talavera-Greenberg"/>
+  <meta itemprop="description alternativeHeadline" name="description" content="Jesse Talavera-Greenberg's personal website"/>
+  <meta name="generator" content="Jekyll"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta itemprop="inLanguage" content="en"/>
-    <meta itemprop="url" content="{{ site.url }}"/>
-    <meta itemprop="name" content="{{ site.title }}" />
+  <meta itemprop="inLanguage" content="en"/>
+  <meta itemprop="url" content="{{ site.url }}"/>
+  <meta itemprop="name" content="{{ site.title }}" />
 
-    <link rel="stylesheet" href="{{ " /public/stylesheets/bs.css " | prepend:site.baseurl }}">
-    <link rel="stylesheet" href="{{" /public/stylesheets/styles.css " | prepend:site.baseurl }}">
-    <link rel="stylesheet" href="{{" /public/stylesheets/pygment_trac.css " | prepend:site.baseurl }}">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="{{ " /favicon.ico " | prepend:site.baseurl }}" />
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
+  <link rel="stylesheet" href="{{ " /public/stylesheets/bs.css " | prepend:site.baseurl }}">
+  <link rel="stylesheet" href="{{" /public/stylesheets/styles.css " | prepend:site.baseurl }}">
+  <link rel="stylesheet" href="{{" /public/stylesheets/pygment_trac.css " | prepend:site.baseurl }}">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="{{ " /favicon.ico " | prepend:site.baseurl }}" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body lang="en" itemscope itemtype="http://schema.org/{% if page.type %}{{ page.type }}{% else %}WebPage{% endif%}">
-    <div class="wrapper">
-        {% include title.html %}
-        <header id="page-title">
-            <h1 itemprop="name">{{ page.title }}</h1>
-            {% if page.subtitle %}<h2 itemprop="headline">{{ page.subtitle }}</h2>{% endif %}
-        </header>
-        <main>
-            {{ content }}
-        </main>
-        {% include footer.html %}
-    </div>
-    <script src="{{ " /public/javascripts/jquery.min.js " | prepend:site.baseurl }}"></script>
-    <script src="{{ " /public/javascripts/bootstrap.min.js " | prepend:site.baseurl }}"></script>
-    {% include scripts.html %}
+  <div class="wrapper">
+    {% include title.html %}
+    <header id="page-title">
+      <h1 itemprop="name">{{ page.title }}</h1>
+      {% if page.subtitle %}<h2 itemprop="headline">{{ page.subtitle }}</h2>{% endif %}
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+
+  <script src="{{ " /public/javascripts/jquery.min.js " | prepend:site.baseurl }}"></script>
+  <script src="{{ " /public/javascripts/bootstrap.min.js " | prepend:site.baseurl }}"></script>
+
+  {% include scripts.html %}
 </body>
 
 </html>
