@@ -1,11 +1,13 @@
 <footer>
 <hr/>
   <div class="left">  
-    &copy;<span itemprop="copyrightYear">{{ site.time | date:"%Y" }}</span> <span itemprop="copyrightHolder">Jesse Talavera-Greenberg</span>.
+    {% capture year %}{{ site.time | date:"%Y" }}{% endcapture %}
+
+    &copy; <time datetime="{{ year }}" itemprop="copyrightYear">{{ year }}</time> <span itemprop="copyrightHolder">Jesse Talavera-Greenberg</span>.
+
     Built with <a href="http://jekyllrb.com/"  target="_blank" rel="external">Jekyll</a> and
-    <a href="https://github.com/railsr/autm-rb" target="_blank" rel="external" itemprop="isBasedOnUrl" content="https://github.com/railsr/autm-rb">Autm-rb</a>
+    <a href="https://github.com/railsr/autm-rb" target="_blank" rel="external">Autm-rb</a>
   </div>
 
-  <div class="right">
-  </div>
+  <div class="right"></div>
 </footer>
