@@ -11,84 +11,91 @@ school_date: "%Y"
 <div itemscope itemtype="https://schema.org/Person">
   <div id="about_me">
     <h2>Who am I?</h2>
-    <p>My name is <span itemprop="givenName">Jesse</span> <span itemprop="familyName">Talavera-Greenberg</span>. I'm a <span itemprop="jobTitle">computer science student</span> at Stony Brook University. My main thing is game programming, though I'm exploring other fields to find something else that tickles my fancy. Hire me!</p>
+    <p>
+      My name is <span itemprop="givenName">Jesse</span> <span itemprop="familyName">Talavera-Greenberg</span>. I'm a <span itemprop="jobTitle">computer science student</span> at Stony Brook University. My main thing is game programming, though I'm exploring other fields to find something else that tickles my fancy. Hire me!
+    </p>
   </div>
+
   <div id="projects">
     <h2>Projects</h2>
-    <p>Check out <a href="/projects">my Projects page</a> for the list!</p>
+    <p>
+      Check out <a href="/projects">my Projects page</a> for the list!
+    </p>
   </div>
 
-
   <section id="skills" itemscope itemtype="http://schema.org/ItemList">
-      <meta itemprop="itemListOrder" content="https://schema.org/ItemListUnordered"/>
-      <h2 class="about-title" itemprop="name">Skills</h2>
-  <div>
+    <meta itemprop="itemListOrder" content="https://schema.org/ItemListUnordered"/>
+    <h2 class="about-title" itemprop="name">Skills</h2>
+    <div>
       <section id="languages">
-          <h3>Languages</h3>
-          <ul>
-              {% for language in site.data.resume.languages %}
-              <li itemprop="itemListElement">{{ language }}</li>
-              {% endfor %}
-          </ul>
+        <h3>Languages</h3>
+        <ul>
+          {% for language in site.data.resume.languages %}
+            <li itemprop="itemListElement">{{ language }}</li>
+          {% endfor %}
+        </ul>
       </section>
       <section id="libraries">
-          <h3>Libraries</h3>
-          <ul>
-              {% for library in site.data.resume.libraries %}
-              <li itemprop="itemListElement">{{ library }}</li>
-              {% endfor %}
-          </ul>
+        <h3>Libraries</h3>
+        <ul>
+          {% for library in site.data.resume.libraries %}
+            <li itemprop="itemListElement">{{ library }}</li>
+          {% endfor %}
+        </ul>
       </section>
+
       <section id="software">
-          <h3>Software</h3>
-          <ul>
-              {% for software in site.data.resume.software %}
-              <li itemprop="itemListElement">{{ software }}</li>
-              {% endfor %}
-          </ul>
+        <h3>Software</h3>
+        <ul>
+          {% for software in site.data.resume.software %}
+            <li itemprop="itemListElement">{{ software }}</li>
+          {% endfor %}
+        </ul>
       </section>
-      </div>
+    </div>
   </section>
 
   <section id="experience">
-      <h2 class="about-title">Experience</h2>
-      {% for work in site.data.resume.experience %}
+    <h2 class="about-title">Experience</h2>
+    {% for work in site.data.resume.experience %}
       <section class="work" itemscope itemtype="http://schema.org/EmployeeRole">
-          <h3 class="job-title" itemprop="roleName">{{ work.title }}</h3>
-          <span class="organization">{{ work.organization }}</span>
-          <br/>
-          <span class="location">{{ work.location }}</span>
-          <span class="duration">{{ work.start | date: page.work_date }} - {% if work.end %}{{ work.end | date: page.work_date }}{% else %}Present{% endif %}</span>
-          <div class="accomplishments" itemprop="description">
-              {% include {{ work.description }} %}
-          </div>
+        <h3 class="job-title" itemprop="roleName">{{ work.title }}</h3>
+        <span class="organization">{{ work.organization }}</span>
+        <br/>
+        <span class="location">{{ work.location }}</span>
+        <span class="duration">{{ work.start | date: page.work_date }} - {% if work.end %}{{ work.end | date: page.work_date }}{% else %}Present{% endif %}</span>
+        <div class="accomplishments" itemprop="description">
+            {% include {{ work.description }} %}
+        </div>
       </section>
-      {% endfor %}
+    {% endfor %}
   </section>
 
   <section id="education">
-      <h2 class="about-title">Education</h2> {% for ed in site.data.resume.education %}
+    <h2 class="about-title">Education</h2>
+    {% for ed in site.data.resume.education %}
       <section class="degree">
-          <div>
+        <div>
           <h3 class="title">{{ ed.degree }} in {{ ed.major }}</h3><br/>
           <span class="school">{{ ed.school }}, {{ ed.location }}</span><br/>
           <span class="duration">{{ ed.start }} - {{ ed.end }} {% unless ed.completed %} (Expected) {% endunless %}</span>
 
           <ul class="notes">
-              {% for note in ed.notes %}
-              <li>{{ note }}</li>
-              {% endfor %}
+            {% for note in ed.notes %}
+            <li>{{ note }}</li>
+            {% endfor %}
           </ul>
-          </div>
-          <section class="curriculum">
+        </div>
+
+        <section class="curriculum">
           <h4>Curriculum</h4>
           <ul>
-              {% for class in ed.curriculum %}
-              <li>{{ class }}</li>
-              {% endfor %}
+            {% for class in ed.curriculum %}
+            <li>{{ class }}</li>
+            {% endfor %}
           </ul>
-          </section>
+        </section>
       </section>
-      {% endfor %}
+    {% endfor %}
   </section>
 </div>
