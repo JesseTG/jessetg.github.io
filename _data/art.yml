@@ -2,54 +2,55 @@
   type: video
   description: advancements-in-3d-imagery.html
   tools: { Blender, LMMS, MakeHuman, Final Cut Pro }
-  preview: art/thumb/3d-imagery.html
-  work: https://youtu.be/pFiuB8qqUAs
+  image: art/thumb/advancements-in-3d-imagery.jpg
+  url: https://youtu.be/pFiuB8qqUAs
   date: 2015-05-01
 
 - name: A Video Recorded Hand
   type: video
   description: a-video-recorded-hand.html
   tools: { Final Cut Pro }
-  preview: art/thumb/a-video-recorded-hand.jpg
-  work: https://youtu.be/cyTufCSjywM
+  image: art/thumb/a-video-recorded-hand.jpg
+  url: https://youtu.be/cyTufCSjywM
   date: 2015-03-01
 
 - name: Your Vision Here
   type: image
 #  description: your-vision-here.html
   tools: { Blender, GIMP, MakeHuman }
-  preview: art/thumb/your-vision-here.jpg
-  work: art/full/your-vision-here.jpg
+  image: art/thumb/your-vision-here.jpg
+  url: /images/art/full/your-vision-here.jpg
   date: 2015-03-01
 
 - name: I'm Sure of It
   type: image
+  headline: Ceci n'est pas une banane
   description: im-sure-of-it.html
   tools: { GIMP, Scribus }
-  preview: art/thumb/im-sure-of-it.jpg
-  work: art/full/im-sure-of-it.jpg
+  image: art/thumb/im-sure-of-it.jpg
+  url: /images/art/full/im-sure-of-it.jpg
   date: 2015-04-01
 
 - name: Blocks
   type: image
 #  description: blocks.html
   tools: { GIMP }
-  preview: art/thumb/blocks.jpg
-  work: art/full/blocks.jpg
+  image: art/thumb/blocks.jpg
+  url: /images/art/full/blocks.jpg
   date: 2015-02-01
 
 - name: B
   type: image
   description: b.html
   tools: { Photoshop }
-  preview: art/thumb/b.png
-  work: art/full/b.png
+  image: art/thumb/b.png
+  url: /images/art/full/b.png
   date: 2011-10-01
 
 - name: The Sounds of Absurdity
   type: images
 #  description: absurdity.html
   tools: { Photoshop }
-  preview: art/thumb/absurdity.jpg
-  work: { art/full/absurdity-front.jpg, art/full/absurdity-back.jpg }
+  image: art/thumb/sounds-of-absurdity-back.jpg
+  url: /images/art/full/sounds-of-absurdity-back.jpg
   date: 2012-01-01

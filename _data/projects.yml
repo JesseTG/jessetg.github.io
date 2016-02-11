@@ -1,7 +1,7 @@
 - name: Invasodado
   headline: "Blocks and aliens and UFOs, oh my!"
   description: invasodado.html
-  tech: { Python, Pygame }
+  tools: { Python, Pygame }
   image: projects/invasodado.png
   url: http://www.desura.com/games/invasodado
   applicationCategory: Game
@@ -12,7 +12,7 @@
 - name: B.A.L.L.S.
   headline: The Badass Looker for Ludicrous Shaders
   description: balls.html
-  tech: { C++, Qt, OpenGL }
+  tools: { C++, Qt, OpenGL }
   image: projects/balls.png
   url: https://github.com/JesseTG/BALLS
   applicationCategory: Development
@@ -23,7 +23,7 @@
   type: VideoGame
   description: gravv.html
   image: projects/gravv.png
-  tech: { Java, libGDX }
+  tools: { Java, libGDX }
   applicationCategory: Game
   genre: Arcade
 
@@ -32,7 +32,7 @@
   type: VideoGame
   description: orbital.html
   image: projects/orbital.png
-  tech: { Unity }
+  tools: { Unity }
   url: /Orbital
   applicationCategory: Game
   genre: Casual
@@ -42,7 +42,7 @@
   type: WebApplication
   description: x-piano.html
   image: projects/x-piano.png
-  tech: { JavaScript, Web Audio, SVG }
+  tools: { JavaScript, Web Audio, SVG }
   applicationCategory: Audio
   url: /X-Piano
 
@@ -51,7 +51,7 @@
   type: WebApplication
   description: buzzer.html
   image: projects/buzzer.jpg
-  tech: { JavaScript, Web Audio }
+  tools: { JavaScript, Web Audio }
   applicationCategory: Audio
   url: /Buzzer
 
@@ -59,17 +59,17 @@
   headline: Sculpt your splines.
   description: pathological.html
   image: projects/pathological.jpg
-  tech: { Java, libGDX }
+  tools: { Java, libGDX }
   applicationCategory: Graphics
 
 - name: Brain Drain
   headline: "#@$&!"
   description: brain-drain.html
-  tech: { C++, Boost }
+  tools: { C++, Boost }
   applicationCategory: Development
 
 - name: Linear Algebra Demo
   description: linear-algebra-demo.html
   headline: Down the rabbit hole.
-  tech: { C++, SFML }
+  tools: { C++, SFML }
   applicationCategory: Graphics
