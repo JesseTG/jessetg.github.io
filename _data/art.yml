@@ -1,6 +1,6 @@
 - name: Advancements in Three-Dimensional Imagery
   type: video
-  description: art/3d-imagery.html
+  description: advancements-in-3d-imagery.html
   tools: { Blender, LMMS, MakeHuman, Final Cut Pro }
   preview: art/thumb/3d-imagery.html
   work: https://youtu.be/pFiuB8qqUAs
@@ -8,7 +8,7 @@
 
 - name: A Video Recorded Hand
   type: video
-  description: art/a-video-recorded-hand.html
+  description: a-video-recorded-hand.html
   tools: { Final Cut Pro }
   preview: art/thumb/a-video-recorded-hand.jpg
   work: https://youtu.be/cyTufCSjywM
@@ -16,7 +16,7 @@
 
 - name: Your Vision Here
   type: image
-  description: art/your-vision-here.html
+#  description: your-vision-here.html
   tools: { Blender, GIMP, MakeHuman }
   preview: art/thumb/your-vision-here.jpg
   work: art/full/your-vision-here.jpg
@@ -24,7 +24,7 @@
 
 - name: I'm Sure of It
   type: image
-  description: art/im-sure-of-it.html
+  description: im-sure-of-it.html
   tools: { GIMP, Scribus }
   preview: art/thumb/im-sure-of-it.jpg
   work: art/full/im-sure-of-it.jpg
@@ -32,7 +32,7 @@
 
 - name: Blocks
   type: image
-  description: art/blocks.html
+#  description: blocks.html
   tools: { GIMP }
   preview: art/thumb/blocks.jpg
   work: art/full/blocks.jpg
@@ -40,7 +40,7 @@
 
 - name: B
   type: image
-  description: art/b.html
+  description: b.html
   tools: { Photoshop }
   preview: art/thumb/b.png
   work: art/full/b.png
@@ -48,7 +48,7 @@
 
 - name: The Sounds of Absurdity
   type: images
-  description: art/absurdity.html
+#  description: absurdity.html
   tools: { Photoshop }
   preview: art/thumb/absurdity.jpg
   work: { art/full/absurdity-front.jpg, art/full/absurdity-back.jpg }

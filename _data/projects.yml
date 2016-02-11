@@ -1,6 +1,6 @@
 - name: Invasodado
   headline: "Blocks and aliens and UFOs, oh my!"
-  description: projects/invasodado.html
+  description: invasodado.html
   tech: { Python, Pygame }
   image: projects/invasodado.png
   url: http://www.desura.com/games/invasodado
@@ -11,7 +11,7 @@
 
 - name: B.A.L.L.S.
   headline: The Badass Looker for Ludicrous Shaders
-  description: projects/balls.html
+  description: balls.html
   tech: { C++, Qt, OpenGL }
   image: projects/balls.png
   url: https://github.com/JesseTG/BALLS
@@ -21,7 +21,7 @@
 - name: Gravv
   headline: Bullets are overrated.
   type: VideoGame
-  description: projects/gravv.html
+  description: gravv.html
   image: projects/gravv.png
   tech: { Java, libGDX }
   applicationCategory: Game
@@ -30,7 +30,7 @@
 - name: Orbital
   headline: And yet they move.
   type: VideoGame
-  description: projects/orbital.html
+  description: orbital.html
   image: projects/orbital.png
   tech: { Unity }
   url: /Orbital
@@ -40,7 +40,7 @@
 - name: X Piano
   headline: Now you can make your own piano!
   type: WebApplication
-  description: projects/x-piano.html
+  description: x-piano.html
   image: projects/x-piano.png
   tech: { JavaScript, Web Audio, SVG }
   applicationCategory: Audio
@@ -49,7 +49,7 @@
 - name: Buzzer
   headline: This app is used to make a loud noise.
   type: WebApplication
-  description: projects/buzzer.html
+  description: buzzer.html
   image: projects/buzzer.jpg
   tech: { JavaScript, Web Audio }
   applicationCategory: Audio
@@ -57,19 +57,19 @@
 
 - name: Pathological
   headline: Sculpt your splines.
-  description: projects/pathological.html
+  description: pathological.html
   image: projects/pathological.jpg
   tech: { Java, libGDX }
   applicationCategory: Graphics
 
 - name: Brain Drain
   headline: "#@$&!"
-  description: projects/brain-drain.html
+  description: brain-drain.html
   tech: { C++, Boost }
   applicationCategory: Development
 
 - name: Linear Algebra Demo
-  description: projects/linear-algebra-demo.html
+  description: linear-algebra-demo.html
   headline: Down the rabbit hole.
   tech: { C++, SFML }
   applicationCategory: Graphics
