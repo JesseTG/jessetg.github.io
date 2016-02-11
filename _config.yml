@@ -22,6 +22,7 @@ future: false
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-paginate
 
 description: The personal blog of Jesse Talavera-Greenberg.
 
