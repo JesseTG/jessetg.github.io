@@ -33,7 +33,7 @@
 
 - name: The Sounds of Absurdity
   type: images
-#  description: absurdity.html
+  description: the-sounds-of-absurdity.html
   tools: { Photoshop }
   image: art/thumb/sounds-of-absurdity-back.jpg
   url: /images/art/full/sounds-of-absurdity-back.jpg
