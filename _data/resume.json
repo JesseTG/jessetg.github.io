@@ -34,19 +34,19 @@
     ],
     "experience": [
         {
-            "description": "experience/ta-cse380.html",
+            "description": "experience/ta.html",
             "location": "Stony Brook, NY",
             "organization": "Stony Brook University",
             "start": "2015-01-01",
             "title": "Teaching Assistant (CSE 380)"
         },
         {
-            "description": "experience/ta-cse219.html",
-            "location": "Stony Brook, NY",
-            "organization": "Stony Brook University",
-            "start": "2014-08-01",
-            "end": "2014-12-01",
-            "title": "Teaching Assistant (CSE 219)"
+            "description": "experience/hbo.html",
+            "location": "New York, NY",
+            "organization": "Home Box Office, Inc.",
+            "start": "2015-06-01",
+            "end": "2015-08-01",
+            "title": "Technology Program Management Intern"
         },
         {
             "description": "experience/juice.html",
