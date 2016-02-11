@@ -31,22 +31,6 @@
   url: /images/art/full/im-sure-of-it.jpg
   date: 2015-04-01
 
-- name: Blocks
-  type: image
-#  description: blocks.html
-  tools: { GIMP }
-  image: art/thumb/blocks.jpg
-  url: /images/art/full/blocks.jpg
-  date: 2015-02-01
-
-- name: B
-  type: image
-  description: b.html
-  tools: { Photoshop }
-  image: art/thumb/b.png
-  url: /images/art/full/b.png
-  date: 2011-10-01
-
 - name: The Sounds of Absurdity
   type: images
 #  description: absurdity.html
