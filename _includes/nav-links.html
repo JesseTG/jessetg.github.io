@@ -7,19 +7,31 @@
 </nav>
 
 <span class="credits right">
-  {% if site.git %}
-    <a href="{{site.git}}" target="_blank" rel="me"><span class="fa fa-github"></span></a>
+  {% if site.github %}
+    <a href="{{site.github}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on GitHub"><span class="fa fa-github"></span></a>
   {% endif %}
 
-  {% if site.stackoverflow %}
-    <a href="{{site.stackoverflow}}" target="_blank" rel="external"><span class="fa fa-stack-overflow"></span></a>
+  {% if site.bitbucket %}
+    <a href="{{site.bitbucket}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on BitBucket"><span class="fa fa-bitbucket"></span></a>
+  {% endif %}
+
+  {% if site.stackexchange %}
+    <a href="{{site.stackexchange}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on StackExchange"><span class="fa fa-stack-exchange"></span></a>
   {% endif %}
 
   {% if site.twitter %}
-    <a href="{{site.twitter}}" target="_blank" rel="external"><span class="fa fa-twitter"></span></a>
+    <a href="{{site.twitter}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on Twitter"><span class="fa fa-twitter"></span></a>
   {% endif %}
 
   {% if site.linkedin %}
-    <a href="{{site.linkedin}}" target="_blank" rel="external"><span class="fa fa-linkedin"></span></a>
+    <a href="{{site.linkedin}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on LinkedIn"><span class="fa fa-linkedin"></span></a>
+  {% endif %}
+
+  {% if site.youtube %}
+    <a href="{{site.youtube}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on YouTube"><span class="fa fa-youtube"></span></a>
+  {% endif %}
+
+  {% if site.reddit %}
+    <a href="{{site.reddit}}" target="_blank" rel="me" title="Jesse Talavera-Greenberg on Reddit"><span class="fa fa-reddit-square"></span></a>
   {% endif %}
 </span>
