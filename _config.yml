@@ -23,8 +23,7 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-# This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
+description: The personal blog of Jesse Talavera-Greenberg.
 
 exclude:
   - "README.md"
