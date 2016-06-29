@@ -6,7 +6,7 @@ permalink: "tags/index.html"
 
 <ul id="tags">
   {% for tag in site.tags %}
-    <a href="#{{ tag | first | slugize }}">{{ tag | first }}</a>
+    <a href="#{{ tag | first | slugify }}">{{ tag | first }}</a>
   {% endfor %}
 </ul>
 
@@ -14,8 +14,8 @@ permalink: "tags/index.html"
   {% for tag in site.tags %}
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
 
-    <h3 class="tag_name" id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
+    <h3 class="tag_name" id="#{{ tag_name | slugify }}">{{ tag_name }}</h3>
+    <a name="{{ tag_name | slugify }}"></a>
       
     {% for post in site.tags[tag_name] %}
       <article>
