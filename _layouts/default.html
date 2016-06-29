@@ -24,7 +24,6 @@
   <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="RSS">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <link rel="icon" type="image/x-icon" href="{{ " /favicon.ico " | prepend:site.baseurl }}" />
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <!--[if lt IE 9]>
@@ -48,7 +47,7 @@
     {% include footer.html %}
   </div>
 
-  <script src="{{ " /public/javascripts/jquery.min.js " | prepend:site.baseurl }}"></script>
+  <script async src="https://code.jquery.com/jquery-3.0.0.slim.min.js"></script>
   <script src="{{ " /public/javascripts/bootstrap.min.js " | prepend:site.baseurl }}"></script>
 
   {% include scripts.html %}
