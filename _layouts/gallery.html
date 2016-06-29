@@ -9,7 +9,7 @@ layout: default
       {% if project.description %} {% include description/{{ project.description}} %} {% else %} No description available. {% endif %}
     {% endcapture %}
 
-    <article class="project" itemscope itemtype="http://schema.org/{% if project.type %}{{ project.type }}{% else %} {{ page.defaultType }} {% endif %}">
+    <article class="project" itemscope itemtype="http://schema.org/{% if project.type %}{{ project.type }}{% else %}{{ page.defaultType }}{% endif %}">
       {% if page.meta_include %} {% include {{ page.meta_include }} item=project %} {% endif %}
 
       <header>
