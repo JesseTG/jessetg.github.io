@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "folder_exclude_patterns": [".sass-cache", "_site"],
+      "file_exclude_patterns": ["tags", ".tags", ".tags_sorted_by_file", ".fuse*", "Gemfile.lock"],
+      "follow_symlinks": true
+    }
+  ],
+  "settings":
+  {
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "rulers": [80]
+  }
+}
+
