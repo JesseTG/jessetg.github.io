@@ -8,7 +8,7 @@ work_date: "%B %Y"
 school_date: "%Y"
 ---
 
-<div itemscope itemtype="https://schema.org/Person">
+<div itemscope itemtype="//schema.org/Person">
   <div id="about_me">
     <h2>Who am I?</h2>
     <p>
@@ -23,8 +23,8 @@ school_date: "%Y"
     </p>
   </div>
 
-  <section id="skills" itemscope itemtype="http://schema.org/ItemList">
-    <meta itemprop="itemListOrder" content="https://schema.org/ItemListUnordered"/>
+  <section id="skills" itemscope itemtype="//schema.org/ItemList">
+    <meta itemprop="itemListOrder" content="//schema.org/ItemListUnordered"/>
     <h2 class="about-title" itemprop="name">Skills</h2>
     <div>
       <section id="languages">
@@ -58,7 +58,7 @@ school_date: "%Y"
   <section id="experience">
     <h2 class="about-title">Experience</h2>
     {% for work in site.data.resume.experience %}
-      <section class="work" itemscope itemtype="http://schema.org/EmployeeRole">
+      <section class="work" itemscope itemtype="//schema.org/EmployeeRole">
         <h3 class="job-title" itemprop="roleName">{{ work.title }}</h3>
         <span class="organization">{{ work.organization }}</span>
         <br/>
