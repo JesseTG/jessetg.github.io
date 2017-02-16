@@ -1,6 +1,9 @@
 ---
 title: "Panorama"
 tags: [art, cse592]
+pictures:
+  - srcset: "/images/art/full/panorama.webp"
+    type: "image/webp"
 ---
 
 <p>
@@ -16,10 +19,7 @@ tags: [art, cse592]
 </p>
 
 <p>
-  ​<picture>
-   <source srcset="/images/art/full/panorama.webp" type="image/webp"/>
-   <img src="/images/art/full/panorama.jpg" alt="Panorama"/>
-  </picture>
+  {% include picture.html src="/images/art/full/panorama.jpg" alt="Panorama" sources=page.pictures %}
 </p>
 
 <p>

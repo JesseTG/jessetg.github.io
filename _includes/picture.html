@@ -1,0 +1,46 @@
+​{% capture the_picture %}
+<picture>
+  {% for source in include.sources %}
+    <source
+    {% if source.srcset %}
+      srcset="{{ source.srcset }}"
+    {% endif %}
+
+    {% if source.media %}
+      media="{{ source.media }}"
+    {% endif %}
+
+    {% if source.type %}
+      type="{{ source.type }}"
+    {% endif %}
+
+    {% if source.sizes %}
+      sizes="{{ source.sizes }}"
+    {% endif %}
+
+    />
+  {% endfor %}
+  <img
+    src="{{ include.src }}"
+    {% if include.class %}
+      class="{{ include.class }}"
+    {% endif %}
+
+    {% if include.alt %}
+      alt="{{ include.alt }}"
+    {% endif %}
+
+    {% if include.width %}
+      width="{{ include.width }}"
+    {% endif %}
+
+    {% if include.height %}
+      height="{{ include.height }}"
+    {% endif %}
+    />
+</picture>
+{% endcapture %}{{ the_picture | strip_newlines }}
+{% comment %}
+  Markdown doesn't like inline HTML that uses multiple lines for some reason, so
+  I need to strip them all out.
+{% endcomment %}

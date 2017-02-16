@@ -2,10 +2,13 @@
 title: "A Better Place"
 tags: [personal, pets]
 excerpt: "Good bye, Rosie."
+pictures:
+  - srcset: "/images/blog/rosie.webp"
+    type: "image/webp"
 ---
 
 <p>
-    <img src="/images/blog/rosie.jpg" class="img-responsive center-block" width="640" height="480"/>
+  {% include picture.html src="/images/blog/rosie.jpg" class="img-responsive center-block" width="640" height="480" sources=page.pictures %}
 </p>
 
 <h2 class="text-center">Rosarita</h2>
