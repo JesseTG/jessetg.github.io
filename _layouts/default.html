@@ -1,6 +1,6 @@
 {% capture everything %}
 <!DOCTYPE html>
-<html itemscope itemtype="//schema.org/WebSite" lang="en">
+<html itemscope itemtype="https://schema.org/WebSite" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -35,7 +35,7 @@
   <![endif]-->
 </head>
 
-<body lang="en" itemscope itemtype="//schema.org/{% if page.type %}{{ page.type }}{% else %}WebPage{% endif%}">
+<body lang="en" itemscope itemtype="https://schema.org/{% if page.type %}{{ page.type }}{% else %}WebPage{% endif%}">
   <div class="wrapper">
     {% include title.html %}
     <header id="page-title">

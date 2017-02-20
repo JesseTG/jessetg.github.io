@@ -3,7 +3,7 @@ layout: default
 type: ItemPage
 ---
 
-<article itemscope itemtype="//schema.org/BlogPosting">
+<article itemscope itemtype="https://schema.org/BlogPosting">
   <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
   <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
   <meta itemprop="wordCount" content="{{ content | strip_html | number_of_words }}"/>
