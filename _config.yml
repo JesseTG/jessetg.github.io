@@ -51,3 +51,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+# If any of these strings appear in a page, don't minify it
+dont-minify:
+  - '<pre'
+  - '<code'

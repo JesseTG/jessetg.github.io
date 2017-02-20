@@ -1,3 +1,4 @@
+{% capture everything %}
 <!DOCTYPE html>
 <html itemscope itemtype="//schema.org/WebSite" lang="en">
 
@@ -53,3 +54,18 @@
 </body>
 
 </html>
+{% endcapture %}
+
+{% assign can-minify = true %}
+{% for pattern in site.dont-minify %}
+  {% if everything contains pattern %}
+    {% assign can-minify = false %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if can-minify %}
+  {{ everything | normalize_whitespace | strip }}
+{% else %}
+  {{ everything | strip }}
+{% endif %}
