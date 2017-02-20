@@ -1,7 +1,7 @@
 {
     "education": [
         {
-            "completed": false,
+            "completed": true,
             "curriculum": [
                 "Object-Oriented Programming",
                 "Algorithms and Data Structures",
@@ -18,18 +18,33 @@
                 "Probability and Statistics",
                 "Univariate Calculus"
             ],
-            "degree": "BS/MS",
-            "end": "2018",
+            "degree": "B.S.",
+            "end": "2016",
             "location": "Stony Brook, NY",
             "major": "Computer Science",
             "notes": [
                 "Minor in Digital Arts",
                 "Specialization in Game Programming",
-                "Dean's List for four semesters",
-                "Accepted in the department's sequential BS/MS degree program (enrollment forthcoming)"
+                "Dean's List for four semesters"
             ],
             "school": "Stony Brook University",
             "start": "2012"
+        },
+        {
+            "completed": false,
+            "curriculum": [
+                "Human-Computer Interaction",
+                "Computer Architecture",
+                "Principles of Programming Languages",
+                "Data Visualization"
+            ],
+            "degree": "M.S.",
+            "end": "2018",
+            "location": "Stony Brook, NY",
+            "major": "Computer Science",
+            "notes": [],
+            "school": "Stony Brook University",
+            "start": "2017"
         }
     ],
     "experience": [
@@ -37,8 +52,9 @@
             "description": "experience/ta.html",
             "location": "Stony Brook, NY",
             "organization": "Stony Brook University",
-            "start": "2015-01-01",
-            "title": "Teaching Assistant (CSE 380)"
+            "start": "2014-08-01",
+            "end": "2016-12-01",
+            "title": "Teaching Assistant"
         },
         {
             "description": "experience/hbo.html",
