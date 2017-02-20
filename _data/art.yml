@@ -1,5 +1,5 @@
 - name: Advancements in Three-Dimensional Imagery
-  type: video
+  type: VisualArtwork
   description: advancements-in-3d-imagery.html
   tools: { Blender, LMMS, MakeHuman, Final Cut Pro }
   image: art/thumb/advancements-in-3d-imagery.jpg
@@ -7,7 +7,7 @@
   date: 2015-05-01
 
 - name: A Video Recorded Hand
-  type: video
+  type: VisualArtwork
   description: a-video-recorded-hand.html
   tools: { Final Cut Pro }
   image: art/thumb/a-video-recorded-hand.jpg
@@ -15,7 +15,7 @@
   date: 2015-03-01
 
 - name: Your Vision Here
-  type: image
+  type: VisualArtwork
 #  description: your-vision-here.html
   tools: { Blender, GIMP, MakeHuman }
   image: art/thumb/your-vision-here.jpg
@@ -23,7 +23,7 @@
   date: 2015-03-01
 
 - name: I'm Sure of It
-  type: image
+  type: VisualArtwork
   headline: Ceci n'est pas une banane
   description: im-sure-of-it.html
   tools: { GIMP, Scribus }
@@ -32,7 +32,7 @@
   date: 2015-04-01
 
 - name: The Sounds of Absurdity
-  type: images
+  type: VisualArtwork
   description: the-sounds-of-absurdity.html
   tools: { Photoshop }
   image: art/thumb/sounds-of-absurdity-back.jpg
