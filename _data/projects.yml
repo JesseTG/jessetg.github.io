@@ -1,3 +1,23 @@
+- name: Rosie
+  headline: "For the ups, downs, rights, and lefts in your life."
+  description: rosie.html
+  tools: {Haxe, HaxeFlixel, Tiled}
+  image: projects/rosie.png
+  url: /Rosie
+  applicationCategory: Game
+  operatingSystem: Any
+  type: VideoGame
+  genre: Casual
+
+- name: B.A.L.L.S.
+  headline: The Badass Looker for Ludicrous Shaders
+  description: balls.html
+  tools: { C++, Qt, OpenGL }
+  image: projects/balls.png
+  url: https://github.com/JesseTG/BALLS
+  applicationCategory: Development
+  applicationSubCategory: Graphics
+
 - name: Invasodado
   headline: "Blocks and aliens and UFOs, oh my!"
   description: invasodado.html
@@ -8,15 +28,6 @@
   operatingSystem: Any
   type: VideoGame
   genre: Arcade
-
-- name: B.A.L.L.S.
-  headline: The Badass Looker for Ludicrous Shaders
-  description: balls.html
-  tools: { C++, Qt, OpenGL }
-  image: projects/balls.png
-  url: https://github.com/JesseTG/BALLS
-  applicationCategory: Development
-  applicationSubCategory: Graphics
 
 - name: Gravv
   headline: Bullets are overrated.
