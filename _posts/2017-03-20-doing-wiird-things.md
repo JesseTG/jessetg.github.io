@@ -5,7 +5,7 @@ tags: [cse592, projects, wii, qt]
 
 I don't think anyone circa 2006 could have imagined how popular the Wii would be among hobbyists; I mean, what does the Wii provide?  Buttons, accelerometer, infrared sensor, a speaker?  And that's ignoring things like the Nunchuck or the Balance Board.  I have a Wii and a lot of hardware lying around for it that I haven't touched in years; now's as good a time as any to dust it off.
 
-First things I tried were Processing and Unity.  Surprisingly, there's *no* good out-of-the-box Wii Remote library for Processing.  You'd think that a Java-scented prototyping environment and Wii Remotes would be a match made in heaven, but I guess not.  There's this [Wrj4P5](http://wrj4p5.osdn.jp) thing, but its documentation is sparse, disjointed, and hard to understand.
+First things I tried were Processing and Unity.  Surprisingly, there's *no* good out-of-the-box Wii Remote library for Processing.  You'd think that a Java-flavored prototyping environment and Wii Remotes would be a match made in heaven, but I guess not.  There's this [Wrj4P5](http://wrj4p5.osdn.jp) thing, but its documentation is sparse, disjointed, and hard to understand.
 
 I couldn't be bothered to fix it, so I tried [Unity-Wiimote](https://github.com/Flafla2/Unity-Wiimote).  Apparently it works fine on Windows and macOS, but it's not tested on Linux.  I wanted to experiment with Wii controllers, not with making hidapi talk to Unity, so I moved on.
 
