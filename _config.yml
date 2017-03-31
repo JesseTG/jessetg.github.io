@@ -26,6 +26,7 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-paginate
+  - jemoji
 
 description: The personal blog of Jesse Talavera-Greenberg.
 
