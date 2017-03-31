@@ -14,33 +14,39 @@ main svg {
 }
 </style>
 
-I feel bad for any business that bought expensive Sun hardware around 2007 or 2008; once Sun went tits-up, their $13,000 server was immediately worthless.  A while ago, one of my professors bought a pair of Sun Fire T2000's online for on the order of hundreds of dollars.  About six weeks ago, he tasked me with getting them online and usable, something his graduate students apparently had failed to do multiple times over.  Then, after that, I was to benchmark several tasks on it and contrast it with an x86 machine from about the same era.  **Challenge accepted.**
+A while ago, one of my professors bought a pair of old and obscure servers for a few hundred dollars.  He recently tasked me with getting them online and usable, something his graduate students apparently had failed to do multiple times over.  Then, after that, I was to benchmark several tasks on it and contrast it with a more conventional machine from about the same era.  **Challenge accepted.**
 
 {% include picture.html src="/images/blog/sun-fire.jpg" alt="Sun Fire T2000 server" sources=page.sun-fire %}
 
-The target?  Two of these.  The mission?  Get 'em working.  (Photo originally from [here](https://commons.wikimedia.org/wiki/File:Sun_Fire_T2000.jpg).)
+The targets?  Two of these Sun Fire T2000s.  The mission?  Get 'em working.  (Photo originally from [here](https://commons.wikimedia.org/wiki/File:Sun_Fire_T2000.jpg).)
 
-What's unique about this machines is its parallel design; rather than a few powerful cores like most consumer hardware, it has a lot of weak cores (32 of them).  You can find exact specs taken from the machine [here](https://github.com/JesseTG/cse502-benchmarks/tree/master/specs/mario).
+What's unique about this machines is its parallel design; rather than a few powerful cores, it has 32 weak ones.  You can find exact specs taken from the machine [here](https://github.com/JesseTG/cse502-benchmarks/tree/master/specs/mario).  I feel bad for any business that dropped $13,000 on this; they're probably getting like, no support from Oracle.  I wonder if there are any still in active service.
 
 ## First Breath
 
-Most Sun servers have something called an Advanced Lights Out Manager, a.k.a. an ALOM; this is an embedded computer that sits separately from the actual server (called the "host"), for the purpose of managing the host and its hardware remotely.  E.g. if the server crashes irreparably, you can reboot it with the ALOM.
+Most Sun servers have something called an Advanced Lights Out Manager, a.k.a. an ALOM; this is an embedded computer that sits separately from the actual server (called the "host"), for the purpose of managing its hardware remotely.  E.g. if the host crashes irreparably, you can reboot it with the ALOM.
 
-There are two main ways to communicate with the Sun Fire's ALOM; serial and Ethernet.  The first machine I set up was already configured to use Ethernet, so I connected it and my laptop to the same network and SSH'd into it.  The second one was not; I had to connect my laptop directly to it with a USB-to-serial wire, then plug in the server.  Then I just used cutecom.  I had to refresh it by send it ESC (`0x1B`) across the line, then following the instructions to wipe the ALOM clean.
+There are two main ways to communicate with the Sun Fire's ALOM; serial and Ethernet.  The first machine I set up (which I named `mario`) was already configured to use Ethernet, so I connected it and my laptop to the same network and SSH'd into it.  You can figure out the ALOM's local IP with [`arp-scan -l -N`](https://github.com/royhills/arp-scan).  Look for Oracle hardware among the returned entries, that's the one you want.
+
+The second one (`luigi`) was not Internet-ready, and took me a while to figure out.  Turns out you have to connect a computer directly to its serial management port **with the server totally unplugged**, then plug it in and use your serial console of choice (`cutecom` in my case, but `tmux` and `screen` are apparently pretty popular, too).
+
+You might need to wipe the ALOM if you can't get in, like if the `admin` password isn't the default 8 trailing characters of the serial number.  In that case, send it an ESC (`0x1B` in ASCII) across the line before it finishes its bootup self-tests, then follow the instructions.
 
 ## Installing Debian
 
-From the ALOM, you can connect to the host through a console.  This is how you can use the machine if it's not yet connected to the Internet, such as for installing a new OS.  I have no interest in Solaris; so I installed Debian.  It didn't go as well as I'd like...
+From the ALOM, you can connect to the host through a console via the `console` command.  This is how you can use the machine if it's not yet connected to the Internet, like when you install a new OS.  You may hit the OpenBoot PROM before actually booting the OS; if you have an installer CD inserted, you can type `boot cdrom` to run it.  Or just type `boot` to run whatever's installed already.
+
+These machines came with Solaris, but I don't give half a rat's ass about it.  So I installed Debian.  It didn't go as well as I'd like...
 
 <img src="/images/blog/slow-af.gif" class="center-block" alt="Horrifyingly slow console output, with a moving mouse cursor for comparison" title="Yeah."  />
 
-That's not edited; the ALOM's console output can be really, *really* slow.  Sometimes.  When the planets are aligned a certain way.  Apparently, the host outputs to the ALOM through an internal serial line that runs at 9600 baud (i.e. *slow*).
+That's not edited; the ALOM's console output can be really, *really* slow.  Sometimes.  When the planets are aligned a certain way.  Apparently, everything output by the ALOM (including the host console) through an internal serial line that runs at 9600 baud.
 
-It gets worse.  The most recent *official* Debian release for SPARC [dates back to 2013](https://www.debian.org/releases/wheezy), and it doesn't even support 64-bit varieties.  But I didn't know that!  Debian Wheezy doesn't have recent versions of anything, and I was hesitant to try to force it on.  Back to the drawing board.
+It gets worse.  The most recent *official* Debian release for SPARC [dates back to 2013](https://www.debian.org/releases/wheezy), and it doesn't even support 64-bit varieties.  But I didn't know that!  Debian Wheezy doesn't have recent versions of anything, and I was hesitant to slap anything together.  Back to the drawing board.
 
 ## The Good News
 
-But then I found out three interesting things.
+Soon after, I found out three interesting things.
 
 The first is that a man named John Paul Adrian Glaubitz maintains Debian ISOs for SPARC64 hardware right [here](https://people.debian.org/~glaubitz/debian-cd).  Seriously, a new ISO had come out the day before I discovered this.  It's neither official nor technically stable, but in my experience thus far it works well enough.
 
@@ -56,24 +62,24 @@ The third is that [you can install Debian via SSH](https://blog.sleeplessbeastie
 6. On the main menu, select `Continue installation remotely using SSH`.
 7. The installer will guide you from there.  Make sure your network will let you SSH in!
 
-There, now you don't have babysit a sluggish serial line.  Continue installing Debian as usual.  Just note that the package repos available out of the box do not contain SPARC64-built software, so you might get warnings or errors.
+There, now you don't have babysit a sluggish serial line.  Continue installing Debian as usual.  Just note that the package repos available out of the box don't have SPARC64-built software, so you might get warnings or errors.
 
 ## First Boot
 
-So you've got Debian on a Sun Fire T2000.  Now what?  Well, the ISOs I linked to earlier do not provide Debian Ports out of the box (as of this writing).  Instructions for enabling it are [here](https://www.ports.debian.org/archive), but basically it's adding these two lines to `/etc/apt/sources.list`:
+The ISOs I linked to earlier do not provide Debian Ports out of the box (as of this writing).  The first thing you can do is rectify that.  Instructions for enabling it are [here](https://www.ports.debian.org/archive), but basically it's adding these two lines to `/etc/apt/sources.list`:
 
 ```
 deb http://ftp.ports.debian.org/debian-ports unstable main
 deb http://ftp.ports.debian.org/debian-ports unreleased main
 ```
 
-The ISOs don't come with `sudo`, so you'll need to `su` to `root` and edit them with `nano`.  Then do `apt-get update && apt-get dist-upgrade`.  Then go have some lunch.  When you get back, install `sudo`, then whatever else you'd like.
+The ISOs don't come with `sudo`, so you'll need to `su` to `root` and edit them with `nano`.  Then do `apt-get update && apt-get dist-upgrade` and go out for lunch.  When you get back, install `sudo`, then whatever else you'd like.
 
-Amazingly, this repo actually has recent software.  Hell, some of it (including `gcc` and `bash`) is actually newer than what I have on my own laptop.  There's even new hipster Unix-tool-alikes like [`fizsh`](https://github.com/zsh-users/fizsh), [`ag`](https://github.com/ggreer/the_silver_searcher), and [`jq`](https://stedolan.github.io/jq) (:heart:) available.
+Amazingly, this repo actually has recent software.  Hell, some of it (including `gcc` and `bash`) is newer than what I have on my own laptop.  There's even new hipster coreutils-alikes like [`fizsh`](https://github.com/zsh-users/fizsh), [`ag`](https://github.com/ggreer/the_silver_searcher), and [`jq`](https://stedolan.github.io/jq) (:heart:) available.
 
 ## Thirty-Two Times the Fun
 
-I was then asked to benchmark these machines (or at least one of them, since they're identical).  I *was* to be given a comparable x86 server for more meaningful data, but at the time of writing that hasn't happened.  If I get access later, I'll update this post with the relevant numbers.  Or maybe I'll just use my own laptop.  I dunno.
+Remember, I've still got to benchmark these machines (or at least one of them, since they're identical).  I *was* to be given a comparable x86 server for more meaningful data, but at the time of writing that hasn't happened.  If I get access later, I'll update this post with the relevant numbers.  Or maybe I'll just use my own laptop.  I dunno.
 
 Also, **note that I am a complete benchmarking amateur.**
 
