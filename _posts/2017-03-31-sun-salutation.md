@@ -6,6 +6,8 @@ sun-fire:
     type: "image/webp"
 ---
 
+A while ago, one of my professors bought a pair of old and obscure servers for a few hundred dollars.  He recently tasked me with getting them online and usable, something his graduate students apparently had failed to do multiple times over.  Then, after that, I was to benchmark several tasks on it and contrast it with a more conventional machine from about the same era.  **Challenge accepted.**
+
 <style>
 main svg {
     margin-left: auto;
@@ -13,8 +15,6 @@ main svg {
     display: block;
 }
 </style>
-
-A while ago, one of my professors bought a pair of old and obscure servers for a few hundred dollars.  He recently tasked me with getting them online and usable, something his graduate students apparently had failed to do multiple times over.  Then, after that, I was to benchmark several tasks on it and contrast it with a more conventional machine from about the same era.  **Challenge accepted.**
 
 {% include picture.html src="/images/blog/sun-fire.jpg" alt="Sun Fire T2000 server" sources=page.sun-fire %}
 
