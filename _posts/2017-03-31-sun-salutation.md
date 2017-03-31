@@ -109,7 +109,7 @@ Similar pattern as the above test.
 
 The script I wrote is available [here](https://github.com/JesseTG/cse502-benchmarks/blob/master/benchmark-compile-linux.sh), and the raw data is available [here](https://github.com/JesseTG/cse502-benchmarks/blob/master/data/luigi-compile-kernel.csv).
 
-This one didn't go so well; I think the second machine (called `luigi`) might actually be faulty.  It mostly finished, but kernel panicked near the end with this error:
+This one didn't go so well.  It mostly finished, but kernel panicked near the end with this error:
 
 ```
 NMI watchdog: BUG: soft lockup - CPU#16 stuck for 23s! [systemd-udevd:291]
