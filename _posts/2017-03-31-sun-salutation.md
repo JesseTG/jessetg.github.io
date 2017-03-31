@@ -81,7 +81,7 @@ Amazingly, this repo actually has recent software.  Hell, some of it (including 
 
 Remember, I've still got to benchmark these machines (or at least one of them, since they're identical).  I *was* to be given a comparable x86 server for more meaningful data, but at the time of writing that hasn't happened.  If I get access later, I'll update this post with the relevant numbers.  Or maybe I'll just use my own laptop.  I dunno.
 
-Also, **note that I am a complete benchmarking amateur.**
+**Note that I am a complete benchmarking amateur.**
 
 I ran three different tasks.  Each task ran three times for each number of cores (i.e. 96 times total).  Except the last, for reasons I'll get into.
 
