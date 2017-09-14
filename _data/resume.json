@@ -39,7 +39,7 @@
                 "Data Visualization"
             ],
             "degree": "M.S.",
-            "end": "2018",
+            "end": "2019",
             "location": "Stony Brook, NY",
             "major": "Computer Science",
             "notes": [],
@@ -74,30 +74,37 @@
         }
     ],
     "languages": [
-        "Java",
         "C++",
+        "C",
         "Python",
-        "Processing",
-        "C#",
+        "Java",
         "Haxe",
+        "JavaScript",
         "HTML 5",
         "CSS 3",
-        "JavaScript"
+        "LaTeX",
+        "C#"
     ],
     "libraries": [
-        "libGDX",
-        "Box2D",
         "Qt",
-        "SFML",
+        "Box2D",
         "OpenGL",
-        "Web Audio",
+        "libGDX",
         "Pygame",
+        "Allegro",
+        "SFML",
+        "Web Audio",
         "Boost",
-        "Lua"
+        "Lua",
+        "MongoDB"
     ],
     "software": [
-        "Unity 3D",
+        "Unity",
+        "Vagrant",
         "Git",
+        "GIMP",
+        "Blender",
+        "Dia",
         "Jekyll",
         "RUBE",
         "Tiled",
