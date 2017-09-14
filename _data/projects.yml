@@ -18,12 +18,37 @@
   applicationCategory: Development
   applicationSubCategory: Graphics
 
+- name: UplinkOS
+  headline: Trust nobody.
+  image: projects/uplinkos.png
+  description: uplinkos.html
+  tools: { C++, Allegro, CMake }
+  applicationCategory: Game
+  operatingSystem: Any
+  url: http://www.moddb.com/mods/uplink-os
+  type: VideoGame
+  genre: Simulation
+
+- name: Awesome Qt
+  headline: "For all your Qt needs."
+  description: awesome-qt.html
+  image: projects/awesome-qt.png
+  url: https://github.com/JesseTG/awesome-qt
+  type: CollectionPage
+
+- name: MESHD
+  headline: The fabric of collaboration.
+  description: meshd.html
+  image: projects/meshd.jpg
+  url: http://art-sync.labs.stonybrook.edu
+  type: WebSite
+
 - name: Invasodado
   headline: "Blocks and aliens and UFOs, oh my!"
   description: invasodado.html
   tools: { Python, Pygame }
   image: projects/invasodado.png
-  url: http://www.desura.com/games/invasodado
+  url: https://github.com/CorundumGames/Invasodado
   applicationCategory: Game
   operatingSystem: Any
   type: VideoGame

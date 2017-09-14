@@ -53,6 +53,14 @@ defaults:
     values:
       layout: "post"
 
+collections:
+  art:
+    output: true
+    permalink: /:collection/:title
+  projects:
+    output: true
+    permalink: /:collection/:title
+
 # If any of these strings appear in a page, don't minify it
 dont-minify:
   - '<pre'

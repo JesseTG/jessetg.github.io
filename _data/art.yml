@@ -14,14 +14,6 @@
   url: https://youtu.be/cyTufCSjywM
   date: 2015-03-01
 
-- name: Your Vision Here
-  type: VisualArtwork
-#  description: your-vision-here.html
-  tools: { Blender, GIMP, MakeHuman }
-  image: art/thumb/your-vision-here.jpg
-  url: /images/art/full/your-vision-here.jpg
-  date: 2015-03-01
-
 - name: I'm Sure of It
   type: VisualArtwork
   headline: Ceci n'est pas une banane
@@ -30,6 +22,40 @@
   image: art/thumb/im-sure-of-it.jpg
   url: /images/art/full/im-sure-of-it.jpg
   date: 2015-04-01
+
+- name: Selfie
+  headline: How can you photograph something that isn't there?
+  type: Website
+  tools: { HTML5, CSS3, JavaScript }
+  description: selfie.html
+  image: /art/thumb/selfie.jpg
+  url: /Selfie
+  date: 2016-01-01
+
+- name: The Process
+  tools: { HTML5, CSS3, JavaScript }
+  type: Website
+  description: the-process.html
+  image: /art/thumb/the-process.jpg
+  url: /The-Process
+  date: 2016-01-01
+
+- name: Short and Stout
+  headline: Here is my handle, here is my spout
+  tools: { HTML5, CSS3, WebGL }
+  description: short-and-stout.html
+  type: Website
+  image: /art/thumb/short-and-stout.jpg
+  url: /Short-and-Stout
+  date: 2016-01-01
+
+- name: Your Vision Here
+  type: VisualArtwork
+  description: your-vision-here.html
+  tools: { Blender, GIMP, MakeHuman }
+  image: art/thumb/your-vision-here.jpg
+  url: /images/art/full/your-vision-here.jpg
+  date: 2015-03-01
 
 - name: The Sounds of Absurdity
   type: VisualArtwork

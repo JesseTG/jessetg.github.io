@@ -11,8 +11,8 @@ type: ItemPage
   <meta itemprop="name" content="{{ page.title }}" />
 
   {% include post-header.html %}
-  <div itemprop="articleBody">
-    {{ content }}
+  <div itemprop="articleBody" class="post-content">
+    {{ content | remove: '&#8203;' }}
   </div>
 </article>
 

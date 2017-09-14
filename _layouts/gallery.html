@@ -3,6 +3,8 @@ type: CollectionPage
 layout: default
 ---
 
+{{ content }}
+
 <section id="projects">
   {% for project in site.data[page.data] %}
     {% capture description %}
@@ -39,8 +41,8 @@ layout: default
           </a>
         {% else %}
           <img src="/images/{{ project.image }}" class="preview" alt="{{ project.name }} Screenshot" title="{{ project.name }} Screenshot" width="320" height="240" itemprop="screenshot image"/>
-        {% endif %} 
-      {% else %} 
+        {% endif %}
+      {% else %}
         {% if project.url %}
           <a href="{{ project.url }}" target="_blank">
             <div class="preview">
