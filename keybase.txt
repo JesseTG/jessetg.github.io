@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jessetg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jessetg.github.io
+  * I am jessetg (https://keybase.io/jessetg) on keybase.
+  * I have a public key ASBnvPIowt1nP6ujiK7dcIm7fVf9iPShtzC9D5maLFhisgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012067bcf228c2dd673faba388aedd7089bb7d57fd88f4a1b730bd0f999a2c5862b20a",
+      "host": "keybase.io",
+      "kid": "012067bcf228c2dd673faba388aedd7089bb7d57fd88f4a1b730bd0f999a2c5862b20a",
+      "uid": "ff07378f0fd27fcaec7f197924fe0519",
+      "username": "jessetg"
+    },
+    "merkle_root": {
+      "ctime": 1523820733,
+      "hash": "38f2216a861da2c50ceff8568297d8666b2685eb2ca03c81e3803c46db818a219af0cf8034cf4b79bba46393ca4a8ac2d0f8bf3f96ab55b5af8a9dcc2233c47d",
+      "hash_meta": "02b4b86264e77beb8c890eb4146d78d6e3cd5391a549eb6f71bf507c585ffed5",
+      "seqno": 2393103
+    },
+    "service": {
+      "entropy": "tkRDxmqOPPaU/X3dmSn6HQJG",
+      "hostname": "jessetg.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1523820807,
+  "expire_in": 504576000,
+  "prev": "5896a8af10205dfc3c804f218362497a506e56098021db766ea1222211e8b0ee",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZ7zyKMLdZz+ro4iu3XCJu31X/Yj0obcwvQ+ZmixYYrIKp3BheWxvYWTESpcCBcQgWJaorxAgXfw8gE8hg2JJelBuVgmAIdt2bqEiIhHosO7EIEJRfofcpUkwokx0APWgP/EYMDfoSG4K42azW4TYdCBBAgHCo3NpZ8RAtRFHeAAQmnnVBzf3aj1FbyUv84ESdfpDcZxjtju2MSVUiI7f5e23+SvxsP1DJ7ztpr9zjkewkaTSCpT5f1REC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEID2widM8j11cJbLIPMnHAZg4GR2F0+z/fKvD5mUbRO9Fo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jessetg
+
+==================================================================
