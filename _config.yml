@@ -39,6 +39,9 @@ exclude:
   - "jessetg.sublime-project"
   - ".gitignore"
   - "LICENSE"
+include:
+  - "keybase.txt"
+
 permalink: :title
 defaults:
   -
