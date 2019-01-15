@@ -39,6 +39,7 @@ exclude:
   - "jessetg.sublime-project"
   - ".gitignore"
   - "LICENSE"
+  - ".vscode"
 include:
   - "keybase.txt"
 
