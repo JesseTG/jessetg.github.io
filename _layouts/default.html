@@ -1,4 +1,4 @@
-{% capture everything %}
+{%- capture everything -%}
 <!DOCTYPE html>
 <html itemscope itemtype="https://schema.org/WebSite" lang="en">
 
@@ -59,18 +59,18 @@
 </body>
 
 </html>
-{% endcapture %}
+{%- endcapture -%}
 
-{% assign can-minify = true %}
-{% for pattern in site.dont-minify %}
-  {% if everything contains pattern %}
-    {% assign can-minify = false %}
-    {% break %}
-  {% endif %}
-{% endfor %}
+{%- assign can-minify = true -%}
+{%- for pattern in site.dont-minify -%}
+  {%- if everything contains pattern -%}
+    {%- assign can-minify = false -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
 
-{% if can-minify %}
-  {{ everything | normalize_whitespace | strip }}
-{% else %}
-  {{ everything | strip }}
-{% endif %}
+{%- if can-minify and jekyll.environment == "production" -%}
+  {{- everything | normalize_whitespace | strip -}}
+{%- else -%}
+  {{- everything | strip -}}
+{%- endif -%}
