@@ -31,7 +31,7 @@
             "start": "2012"
         },
         {
-            "completed": false,
+            "completed": true,
             "curriculum": [
                 "Human-Computer Interaction",
                 "Computer Architecture",
