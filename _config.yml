@@ -2,10 +2,13 @@ baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the r
 url: "JesseTG.github.io" # the base hostname & protocol for your site.
 title: "Jesse Makes Things"
 
-
+minimal_mistakes_skin: "mint"
+locale: "en-US"
 paginate: 5 #articles per page
 paginate_path: /blog/page:num #makes pagination working
 
+repository: "JesseTG/JesseTG.github.io"
+github_username: JesseTG
 
 #contacts
 github: "https://github.com/JesseTG"
@@ -23,40 +26,52 @@ sass:
 timezone: America/New_York
 future: false
 
-gems:
-  - jekyll-sitemap
-  - jekyll-redirect-from
+plugins:
+  - jekyll-archives
+  - jekyll-compose
+  - jekyll-feed
+  - jekyll-include-cache 
   - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jemoji
 
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 description: The personal blog of Jesse Talavera-Greenberg.
 
 exclude:
-  - "README.md"
-  - "CHANGELOG.md"
   - "Gemfile"
   - "Gemfile.lock"
-  - "jessetg.sublime-project"
   - ".gitignore"
   - "LICENSE"
-  - ".vscode"
+  - "CNAME"
 include:
   - "keybase.txt"
 
 permalink: :title
+
 defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
     values:
-      layout: "post"
+      layout: single
+      author_profile: true
 
 collections:
   art:
