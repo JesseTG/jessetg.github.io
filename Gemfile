@@ -1,2 +1,12 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
+gem "jekyll-archives"
+gem "jekyll-compose"
+gem "jekyll-feed"
+gem "jekyll-include-cache"
+gem "jekyll-paginate"
+gem "jekyll-redirect-from"
+gem "jekyll-remote-theme"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jemoji"
+gem "minimal-mistakes-jekyll"
