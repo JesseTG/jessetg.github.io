@@ -1,5 +1,6 @@
 baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
 url: "JesseTG.github.io" # the base hostname & protocol for your site.
+email: jesse@jesse.tg
 title: "Jesse Makes Things"
 
 minimal_mistakes_skin: "mint"
@@ -9,16 +10,33 @@ paginate_path: /blog/page:num #makes pagination working
 
 repository: "JesseTG/JesseTG.github.io"
 github_username: JesseTG
+twitter: JesseT_G
+
+author:
+  name   : "Jesse TG"
+  avatar : "/assets/image/jesse.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
 
 #contacts
 github: "https://github.com/JesseTG"
 stackexchange: "https://stackexchange.com/users/1096459/jessetg"
-twitter: "https://twitter.com/JesseT_G"
 linkedin: "https://www.linkedin.com/in/jessetg"
 youtube: "https://www.youtube.com/channel/UCuvu5_FrOhwzmpX_nOGrsOg"
 bitbucket: "https://bitbucket.org/jessetg/"
 reddit: "https://www.reddit.com/user/JesseTG"
-email: "jessetalavera@aol.com"
 
 sass:
     style: :compressed
@@ -53,6 +71,10 @@ include:
 permalink: :title
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      author_profile: true
   # _posts
   - scope:
       path: "_posts"
@@ -78,8 +100,10 @@ defaults:
       type: projects
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
+      related: true
+      comments: true
 
 collections:
   art:
@@ -88,8 +112,3 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title
-
-# If any of these strings appear in a page, don't minify it
-dont-minify:
-  - '<pre'
-  - '<code'
