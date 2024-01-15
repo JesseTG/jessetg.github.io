@@ -13,30 +13,34 @@ github_username: JesseTG
 twitter: JesseT_G
 
 author:
-  name   : "Jesse TG"
-  avatar : "/assets/image/jesse.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: "Jesse TG"
+  avatar: "/assets/image/jesse.jpg"
+  bio: "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "E-Mail"
+      icon: "fa fa-fw fa-envelope"
+      url: "mailto:jesse@jesse.tg"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-#contacts
-github: "https://github.com/JesseTG"
-stackexchange: "https://stackexchange.com/users/1096459/jessetg"
-linkedin: "https://www.linkedin.com/in/jessetg"
-youtube: "https://www.youtube.com/channel/UCuvu5_FrOhwzmpX_nOGrsOg"
-bitbucket: "https://bitbucket.org/jessetg/"
-reddit: "https://www.reddit.com/user/JesseTG"
+      url: "https://github.com/JesseTG"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jessetg"
+    - label: YouTube
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCuvu5_FrOhwzmpX_nOGrsOg"
+    - label: Reddit
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/JesseTG"
+    - label: StackExchange
+      icon: "fab fa-fw fa-stack-exchange"
+      url: "https://stackexchange.com/users/1096459/jessetg"
+    - label: "Google+"
+      icon: "fab fa-fw fa-google-plus-square"
+      url: "https://goo.gl/jN4CT2"
 
 sass:
     style: :compressed
