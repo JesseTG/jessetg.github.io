@@ -1,11 +1,10 @@
 ---
-title: Projects
-subtitle: The reason you're here
-permalink: "/projects/index.html"
-layout: gallery
-meta_include: "meta-project.html"
-defaultType: SoftwareApplication
-data: projects
+collection: projects
+layout: collection
+entries_layout: grid
+classes: wide
+redirect_from:
+    - /artwork
 ---
 
 <p>

@@ -1,3 +1,5 @@
 main:
   - title: "Blog"
     url: /archive
+  - title: "Projects"
+    url: /projects
