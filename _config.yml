@@ -1,7 +1,11 @@
 baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
 url: "JesseTG.github.io" # the base hostname & protocol for your site.
-email: jesse@jesse.tg
+email: "jesse@jesse.tg"
+
 title: "Jesse Makes Things"
+subtitle: "Mostly with code."
+name: "Jesse TG"
+description: "The personal blog of Jesse TG."
 
 minimal_mistakes_skin: "mint"
 locale: "en-US"
@@ -16,28 +20,29 @@ author:
   name: "Jesse TG"
   avatar: "/assets/image/jesse.jpg"
   bio: "My awesome biography constrained to a sentence or two goes here."
-  links:
+  location: "Long Island, NY"
+  links: &links
     - label: "E-Mail"
       icon: "fa fa-fw fa-envelope"
       url: "mailto:jesse@jesse.tg"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/JesseTG"
+      url: &github "https://github.com/JesseTG"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/"
+      url: &twitter "https://twitter.com/JesseT_G"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jessetg"
+      url: &linkedin "https://www.linkedin.com/in/jessetg"
     - label: YouTube
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/channel/UCuvu5_FrOhwzmpX_nOGrsOg"
+      url: &youtube "https://www.youtube.com/channel/UCuvu5_FrOhwzmpX_nOGrsOg"
     - label: Reddit
       icon: "fab fa-fw fa-reddit"
-      url: "https://www.reddit.com/user/JesseTG"
+      url: &reddit "https://www.reddit.com/user/JesseTG"
     - label: StackExchange
       icon: "fab fa-fw fa-stack-exchange"
-      url: "https://stackexchange.com/users/1096459/jessetg"
+      url: &stackexchange "https://stackexchange.com/users/1096459/jessetg"
     - label: "Google+"
       icon: "fab fa-fw fa-google-plus-square"
       url: "https://goo.gl/jN4CT2"
@@ -61,7 +66,6 @@ plugins:
   - jemoji
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-description: The personal blog of Jesse Talavera-Greenberg.
 
 exclude:
   - "Gemfile"
@@ -116,3 +120,18 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title
+
+twitter:
+  username: JesseT_G
+
+social:
+  links:
+    - *github
+    - *twitter
+    - *linkedin
+    - *youtube
+    - *reddit
+    - *stackexchange
+
+footer:
+  links: *links
