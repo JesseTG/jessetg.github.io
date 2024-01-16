@@ -6,6 +6,7 @@ title: "Jesse Makes Things"
 subtitle: "Mostly with code."
 name: "Jesse TG"
 description: "The personal blog of Jesse TG."
+logo: "/assets/image/logo.svg"
 
 minimal_mistakes_skin: "mint"
 locale: "en-US"
