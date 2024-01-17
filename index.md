@@ -3,8 +3,5 @@ layout: home
 author_profile: true
 redirect_from:
     - /about
+    - /thanks
 ---
-
-I am Jesse
-
-I make things
