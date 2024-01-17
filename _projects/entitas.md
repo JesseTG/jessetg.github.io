@@ -4,6 +4,7 @@ number: 750
 header:
   overlay_image: assets/image/entitas-header.jpg
   teaser: assets/image/entitas-header.jpg
+  show_overlay_excerpt: false
 ---
 
 Although I didn't contribute to the Entitas codebase, I helped out in several other ways:
