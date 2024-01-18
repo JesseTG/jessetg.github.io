@@ -8,5 +8,5 @@ redirect_from:
   - /artwork
 ---
 
-These are some of the most interesting things I've done,
+These are some of the most interesting things I've worked on,
 sorted roughly by freshness.
