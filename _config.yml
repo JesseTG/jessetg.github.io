@@ -37,9 +37,6 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter"
       url: &twitter "https://twitter.com/JesseT_G"
-    - label: YouTube
-      icon: "fab fa-fw fa-youtube"
-      url: &youtube "https://www.youtube.com/channel/UCuvu5_FrOhwzmpX_nOGrsOg"
     - label: Reddit
       icon: "fab fa-fw fa-reddit"
       url: &reddit "https://www.reddit.com/user/JesseTG"
@@ -128,7 +125,6 @@ social:
     - *github
     - *twitter
     - *linkedin
-    - *youtube
     - *reddit
     - *stackexchange
 
