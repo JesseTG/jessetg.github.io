@@ -14,20 +14,22 @@ header:
 
 RetroArch is a frontend for retro game emulators,
 unifying the experience across platforms and providing features beyond what the original emulators offer.
-I've provided numerous contributions to RetroArch, including:
+I've contributed various features and bugfixes, such as:
 
-- Microphone support.
+- [Microphone support](https://github.com/libretro/RetroArch/pull/14731).
   I designed an API that RetroArch-compatible emulators can use
   to forward the host system's microphone to the emulated system.
   Other libretro frontends have added support for this API as well.
   I implemented microphone drivers for ALSA (Linux), WASAPI (Windows), and SDL2 (everything else).
-- Power status support for the libretro API.
-  Although RetroArch itself already supports querying and displaying the device's battery level,
-  I exposed it to cores for the benefit of emulators that employ that little bit of extra finesse.
-- Documentation for the libretro API,
-  which RetroArch and compatible emulators use to communicate with each other.
-- Support for the XDelta patch format,
-  which is commonly used by the ROM hacking community
+- [Power status API support](https://github.com/libretro/RetroArch/pull/15387).
+  Although RetroArch itself had support for querying and displaying the device's battery level,
+  I exposed it to cores.
+- [Extensive documentation](https://github.com/libretro/RetroArch/pull/15641)
+  for the API that sits between frontends and cores.
+- [XDelta softpatching support](https://github.com/libretro/RetroArch/pull/15915).
+  This format is commonly used by the ROM hacking community
   to distribute translations and mods for retro games.
-- GitHub Actions workflows for MSVC-powered Windows and 32-bit Linux builds,
+- GitHub Actions workflows
+  for [MSVC-powered Windows](https://github.com/libretro/RetroArch/pull/15393)
+  and [32-bit Linux builds](https://github.com/libretro/RetroArch/pull/15980),
   to reduce the risk of regressions.

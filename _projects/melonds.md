@@ -15,10 +15,10 @@ header:
 melonDS is a Nintendo DS emulator.
 I've contributed dozens of bugfixes and refactorings, including:
 
-- Refactored the entire emulator to be object-oriented,
+- [Refactored the entire emulator to be object-oriented](https://github.com/melonDS-emu/melonDS/pull/1893),
   laying the groundwork for running multiple instances in a single process
   (a prerequisite for emulating the DS's local multiplayer features over the Internet).
-- Refactored serialization code to work in-memory,
-  rather than directly writing to disk.
+- [Support for in-memory serialization](https://github.com/melonDS-emu/melonDS/pull/1693),
+  rather than requiring writes directly to disk.
   Not only is this required for emulating local wireless over netplay,
   but it enables various features when used in RetroArch.

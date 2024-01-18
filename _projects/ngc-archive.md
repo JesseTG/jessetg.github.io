@@ -1,9 +1,11 @@
 ---
 title: NGC Archive
+tagline: "Helping preserve the legacy of the National Guidelines Clearinghouse."
 number: 800
 header:
-  image: assets/image/ngc-archive.png
+  overlay_image: assets/image/ngc-archive.jpg
   teaser: assets/image/ngc-archive.png
+
 ---
 
 The National Guidelines Clearinghouse (NGC) was a public resource for evidence-based clinical practice guidelines.
