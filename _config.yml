@@ -100,7 +100,7 @@ defaults:
       path: "_projects"
       type: projects
     values:
-      layout: single
+      layout: archive
       author_profile: true
       show_date: false
       share: true
