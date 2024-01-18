@@ -1,5 +1,5 @@
 baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "JesseTG.github.io" # the base hostname & protocol for your site.
+url: "https://jesse.tg" # the base hostname & protocol for your site.
 email: "jesse@jesse.tg"
 
 title: "Jesse Makes Things"
