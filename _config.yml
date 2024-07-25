@@ -15,7 +15,6 @@ paginate_path: /blog/page:num #makes pagination working
 
 repository: "JesseTG/JesseTG.github.io"
 github_username: JesseTG
-twitter: JesseT_G
 linkedin: https://www.linkedin.com/in/jessetg
 
 author:
