@@ -134,3 +134,7 @@ social:
 
 footer:
   links: *links
+
+enable_copy_code_button: true
+kramdown:
+  gfm_emojis: true
