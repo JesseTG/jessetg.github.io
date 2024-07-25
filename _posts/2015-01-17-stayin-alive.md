@@ -2,6 +2,8 @@
 title: Stayin' Alive
 tags: [writing, /r/writingprompts]
 excerpt: “His heart's not beating, somebody get help!” A young woman kneeled over an elderly man. He had suddenly collapsed in the middle of the diner; tragic, as he seemed perfectly fine when he first got here.
+redirect_from:
+  - /stayin-alive
 ---
 
 Occasionally I participate on the [/r/WritingPrompts](http://www.reddit.com/r/WritingPrompts/) subreddit.  When I do, I'll post my work here, because why not.

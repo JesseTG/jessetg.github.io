@@ -1,7 +1,8 @@
 ---
 title: "Introducing libretro.py"
 tags: [projects, python, libretro]
-permalink: /libretropy
+redirect_from:
+  - /libretropy
 header:
   overlay_image: /assets/image/libretropy.webp
   show_overlay_excerpt: false

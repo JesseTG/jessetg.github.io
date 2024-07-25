@@ -1,6 +1,8 @@
 ---
 title: "Emergency Mode is Not an Emergency"
 tags: [technology, linux, error]
+redirect_from:
+  - /emergency-mode
 ---
 
 I can't seem to find anyone else who's had this problem and known how to deal with it, so I'll share my experience.

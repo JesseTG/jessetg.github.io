@@ -112,6 +112,9 @@ defaults:
         teaser: assets/image/default-teaser.jpg
 
 collections:
+  posts:
+    output: true
+    permalink: /blog/:title
   oldprojects:
     output: true
     permalink: /:collection/:title

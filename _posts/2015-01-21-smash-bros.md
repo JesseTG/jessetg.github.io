@@ -2,6 +2,8 @@
 title: Super Smash Bros.
 tags: [writing, /r/writingprompts]
 excerpt: I've been into video games for as long as I can remember.  Hell, when I finished high school I had more game consoles than dates.  But I've always had a soft spot for Nintendo in particular.  Back in the late 90's, Nintendo came out with this line of collectible figurines.  Naturally, I had to have them all.  I was just shy of fourteen years old when my mom got me my first pair--Mario and Link.  They were my reward for doing so well in school that year.
+redirect_from:
+  - /smash-bros
 ---
 
 Occasionally I participate on the [/r/WritingPrompts](http://www.reddit.com/r/WritingPrompts/) subreddit.  When I do, I'll post my work here, because why not.

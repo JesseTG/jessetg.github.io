@@ -1,6 +1,8 @@
 ---
 title: "Doing Wiird Things"
 tags: [cse592, projects, wii, qt]
+redirect_from:
+  - /doing-wiird-things
 ---
 
 I don't think anyone circa 2006 could have imagined how popular the Wii would be among hobbyists; I mean, what does the Wii provide?  Buttons, accelerometer, infrared sensor, a speaker?  And that's ignoring things like the Nunchuck or the Balance Board.  I have a Wii and a lot of hardware lying around for it that I haven't touched in years; now's as good a time as any to dust it off.

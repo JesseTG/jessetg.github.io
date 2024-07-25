@@ -1,6 +1,8 @@
 ---
 title: "On Failure"
 tags: [personal, failure]
+redirect_from:
+  - /on-failure
 ---
 
 Yet again, I pulled an all-nighter.  This time, to get a project of mine ready for my university's game programming competition.  Unfortunately, it was a bust.  I failed to fix all the bugs and rewrite all the code I needed to in time for the submission deadline.  This got me in a funk over the past few days, and was a substantial blow to my confidence.  Wallowing in self-loathing and shame didn't help me feel any better about myself, however.  So I'm trying something else that is.

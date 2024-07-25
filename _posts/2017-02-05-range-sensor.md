@@ -1,6 +1,8 @@
 ---
 title: "Range Sensor"
 tags: [arduino, cse592]
+redirect_from:
+  - /range-sensor
 ---
 
 Made another Arduino thing today, this time using a sonar rangefinder and an LED matrix.  It doesn't quite make for clever photography, but I still like it.

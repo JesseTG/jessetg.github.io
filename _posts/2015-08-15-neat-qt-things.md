@@ -1,6 +1,8 @@
 ---
 title: "Neat, un-hacky tricks with Qt properties (1/2)"
 tags: [projects, qt, tricks]
+redirect_from:
+  - /neat-qt-things
 ---
 
 I've been working on [BALLS](https://github.com/JesseTG/BALLS) in my spare time this summer.  It's a shader editor designed with ease of use in mind.  I wanted to be able to support as many GLSL data types as I possibly can; yet to expose *every single type* to Qt's property system would have been extremely tedious and error-prone.  I'm not one to just grin and bear these sorts of things, however; I'm going to show you how I sidestepped this tedium.  *I'm using Qt 5.4; it may work with earlier versions, but I'm not sure.*

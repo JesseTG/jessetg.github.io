@@ -1,6 +1,8 @@
 ---
 title: "Sun Salutation"
 tags: [projects, hardware, sysadmin]
+redirect_from:
+  - /sun-salutation
 sun-fire:
   - srcset: "/images/blog/sun-fire.webp"
     type: "image/webp"

@@ -1,6 +1,8 @@
 ---
 title: "Winging It"
 tags: [arduino, cse592, projects, fabrication]
+redirect_from:
+  - /winging-it
 ---
 
 I'm making a case for my Arduino, for some reason.  I'll be getting this fabricated with the computer science building's laser cutter tomorrow (already bought some acrylic to use).  I'm not sure I really know what I'm doing, so I just stuck the pieces together in Inkscape and am hoping for the best.
