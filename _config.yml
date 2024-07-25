@@ -74,6 +74,7 @@ exclude:
   - "LICENSE"
   - "CNAME"
   - ".idea"
+  - "Justfile"
 include:
   - "keybase.txt"
 
