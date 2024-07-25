@@ -74,6 +74,7 @@ exclude:
   - ".gitignore"
   - "LICENSE"
   - "CNAME"
+  - ".idea"
 include:
   - "keybase.txt"
 
