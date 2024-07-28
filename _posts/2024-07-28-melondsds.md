@@ -14,6 +14,8 @@ It's been a long time coming
 but [RetroArch is now on the App Store][retroarch-appstore],
 and one of my biggest contributions to it is included!
 
+<!--more-->
+
 I recently posted about [a test framework I was working on for libretro cores]({% post_url 2024-07-22-libretropy %}).
 This is the thing I was testing --
 a port of a Nintendo DS emulator called [melonDS][melonds].[^1]
