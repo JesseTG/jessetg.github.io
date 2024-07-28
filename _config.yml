@@ -25,6 +25,9 @@ author:
     systems programming and usability.
   location: "Long Island, NY"
   links: &links
+    - label: "Sponsor me!"
+      icon: "fa fa-solid fa-heart"
+      url: &gh-sponsors "https://github.com/sponsors/JesseTG"
     - label: "E-Mail"
       icon: "fa fa-fw fa-envelope"
       url: "mailto:jesse@jesse.tg"
@@ -132,6 +135,7 @@ social:
     - *linkedin
     - *reddit
     - *stackexchange
+    - *gh-sponsors
 
 footer:
   links: *links
