@@ -5,8 +5,8 @@ number: 150
 redirect_from:
   - /projects/melondsds
 header:
-  overlay_image: assets/image/melondsds-header.jpg
-  teaser: assets/image/melondsds-header.jpg
+  overlay_image: /assets/image/blog/melondsds-header.avif
+  teaser: /assets/image/blog/melondsds-header.avif
   actions:
   - label: "GitHub"
     url: "https://github.com/JesseTG/melonds-ds"
