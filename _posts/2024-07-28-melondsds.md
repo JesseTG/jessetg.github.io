@@ -65,8 +65,8 @@ I have plans to make this even more powerful without compromising usability; sta
 
 # Better Error Messages
 
-errors happen
-its typically underrated
+In my experience, good error messages and graceful degradation
+are _severely_ underrated in the emulation scene.
 
 {% include figure popup=true class="align-center"
     image_path="/assets/image/blog/melondsds-errors.webp"
@@ -77,8 +77,6 @@ its typically underrated
     "
     caption="The little melon dude wants to help."
 %}
-
-its helped people
 
 # Streamlined DSi Support
 
